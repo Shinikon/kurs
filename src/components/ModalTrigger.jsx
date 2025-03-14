@@ -1,4 +1,3 @@
-// src/ModalTrigger.jsx
 import React, { useState, Children, cloneElement } from 'react';
 import Modal from './Modal';
 

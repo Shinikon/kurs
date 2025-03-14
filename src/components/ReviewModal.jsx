@@ -1,10 +1,10 @@
 // src/ReviewModal.jsx
 import React, { useState } from 'react';
-import Modal from './Modal';
-import '../scss/app.scss';
-import add from '../assets/img/addFile.svg';
+// import './ReviewModal.css'; // Import styles
+import add from '../assets/img/addFile.svg'; // Import the add icon
+import "../scss/components/_modal.scss"
 
-const ReviewModal = ({ isOpen, onClose }) => {
+const ReviewModal = ({ onClose }) => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -34,73 +34,80 @@ const ReviewModal = ({ isOpen, onClose }) => {
             agreement,
         });
 
-        onClose(); // Закрываем модальное окно
-        alert('Спасибо за ваш отзыв!'); // Отображаем уведомление об успехе
+        onClose(); // Close the modal
+
+        alert('Спасибо за ваш отзыв!'); // Используем alert
     };
 
     return (
-        <form onSubmit={handleSubmit} className="review-modal">
-            <div className="review-file-upload" onClick={() => document.getElementById('fileInput').click()}>
-                <span>
-                    <h2>Прикрепить файл</h2>
-                    <img src={add} alt="Прикрепить файл" />
-                </span>
-                <input type="file" id="fileInput" style={{ display: 'none' }} onChange={handleFileChange} />
-            </div>
+        <div className="review__modal-container">
+            <div className="review__file-upload">
+                {/* <h3>Загрузите файл</h3> */}
+                <label htmlFor="file-upload" className="custom-file-upload">
+                    <img src={add} alt="" />
+                    <input type="file" id="file-upload" onChange={handleFileChange} style={{ display: 'none' }} />
+                {file && <p>Выбранный файл: {file.name}</p>}
+                </label>
 
-            <div className="review-form-inputs">
-                <div className="review-name-email">
-                    <div>
-                        <div className="review-form-label"><h3>Имя</h3></div>
+            </div>
+            <form onSubmit={handleSubmit} className="review"> {/* Correct class name here */}
+                <div className="review__form-inputs">
+                    <div className="review__name-email">
+                        <div>
+                            <div className="review__form-label"><h3>Имя</h3></div>
+                            <input
+                                type="text"
+                                placeholder="Иванов Иван"
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                                className="custom-input"
+                            />
+                        </div>
+                        <div>
+                            <div className="review__form-label"><h3>Почта</h3></div>
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                className="custom-input"
+                            />
+                        </div>
+                    </div>
+                    <div className="review__form-label"><h3>Номер телефона</h3></div>
+                    <div className="review__phone">
                         <input
-                            type="text"
-                            placeholder="Иванов Иван"
-                            value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            type="tel"
+                            placeholder="+7(---)--- -- --"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            className="custom-input"
                         />
                     </div>
-                    <div>
-                        <div className="review-form-label"><h3>Почта</h3></div>
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
+                    <div className="review__form-label"><h3>Отзыв</h3></div>
+                    <div className="review__text-area">
+                        <textarea
+                            placeholder="Ваш отзыв"
+                            value={comment}
+                            onChange={(e) => setComment(e.target.value)}
+                            className="custom-textarea"
                         />
                     </div>
+                    <div className="review__checkbox">
+                        <nobr>
+                            <input
+                                type="checkbox"
+                                id="agreement"
+                                checked={agreement}
+                                onChange={() => setAgreement(!agreement)}
+                            />
+                            <label htmlFor="agreement">Согласие на обработку персональных данных</label>
+                        </nobr>
+                    </div>
+                    <button type="submit" className="review__submit-button"><p>Отправить отзыв</p></button>
                 </div>
-                <div className="review-form-label"><h3>Номер телефона</h3></div>
-                <div className="review-phone">
-                    <input
-                        type="tel"
-                        placeholder="+7(---)--- -- --"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                    />
-                </div>
-                <div className="review-form-label"><h3>Отзыв</h3></div>
-                <div className="review-text-area">
-                    <textarea
-                        placeholder="Ваш отзыв"
-                        value={comment}
-                        onChange={(e) => setComment(e.target.value)}
-                    />
-                </div>
-                <div className="review-checkbox">
-                    <nobr>
-                        <input
-                            type="checkbox"
-                            id="agreement"
-                            checked={agreement}
-                            onChange={() => setAgreement(!agreement)}
-                        />
-                        <label htmlFor="agreement">Согласие на обработку персональных данных</label>
-                    </nobr>
-                </div>
-                <button type="submit" className="review-submit-button">Отправить отзыв</button>
-            </div>
-        </form>
-
+            </form>
+        </div>
     );
 };
 

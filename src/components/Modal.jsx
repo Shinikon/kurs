@@ -1,10 +1,10 @@
-// Modal.jsx
 import React from 'react';
-import '../scss/components/_modal.scss';
-import closeIcon from '../assets/img/close.svg';
+import '../scss/components/_modal.scss';  // Или путь к вашим стилям
+import closeIcon from '../assets/img/close.svg';  // Или путь к вашей картинке
 
 const Modal = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;
+
     return (
         <div className="modal-overlay">
             <div className="modal">
