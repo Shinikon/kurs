@@ -1,0 +1,112 @@
+
+.footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &__container{
+        margin-top: 60px;
+        color: white;
+        display: grid;
+        grid-template-columns: 336px 245px 31px;
+        grid-template-rows: 250px;
+        justify-content: space-between;
+        margin-left: 60px;
+        margin-right: 59px;
+
+        &_box{
+            &_top{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            &_bottom{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+        &_order{
+            button{
+                margin-left: -100px;
+                border: none;
+                background-color: rgb(44, 41, 140, 0.6) ;
+                width: 245px;
+                height: 245px;
+                border-radius: 200px;
+                color: white;
+
+
+                h2{
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        &--icons{
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer{
+        margin-top: 50px;
+        margin-bottom: 25px;
+        &__container{
+            margin-top: 16px;
+            color: white;
+            display: grid;
+            grid-template-columns: 336px 245px 31px;
+            grid-template-rows: 250px;
+            justify-content: space-between;
+            margin-left: 60px;
+            margin-right: 59px;
+
+            &_box{
+                &_top{
+                    margin-top: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+
+                &_bottom{
+                    margin-top: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+            &_order{
+                button{
+                    margin-top: 40px;
+                    margin-left: -50px;
+                    border: none;
+                    background-color: rgb(44, 41, 140, 0.6) ;
+                    width: 123px;
+                    height: 123px;
+                    border-radius: 200px;
+                    color: white;
+
+
+                    h2{
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+            &--icons{
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    }
+}

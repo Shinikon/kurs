@@ -1,0 +1,207 @@
+.banner {
+    &__container{
+        &_box{
+            &_btns{
+                display: flex;
+                margin-left: 168px;
+                gap: 15px;
+                &_social{
+                    color: white;
+                    width: auto;
+                    height: 47px; 
+                    background-color: #7155C6;
+                    display: flex;
+                    gap: 15px;
+                    border: none;
+                    border-radius: 30px;
+                    align-items: center;
+                    padding-left: 20px;
+                    padding-right: 30px;
+    
+                    &_img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .banner{ 
+        &__container {
+            &_box{
+                &_btns{
+                    display: flex;
+                    margin-left: 20px;
+                    gap: 5px;
+                    &_social{
+                        color: white;
+                        // width: 125px;
+                        height: 30px;
+                        background-color: #7155C6;
+                        display: flex;
+                        gap: 6px;
+                        // border: none;
+                        border-radius: 30px;
+                        // align-items: center;
+                        padding-left: 15px;
+                        padding-right: 12px;
+    
+                        &_img{
+                            width: 23px;
+                            height: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .banner{ 
+        &__container {
+            &_box{
+                &_btns{
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    // margin-left: 20px;
+                    gap: 5px;
+                    &_social{
+                        margin-left: auto;
+                        color: white;
+                        // width: 125px;
+                        height: 15px;
+                        background-color: #7155C6;
+                        display: flex;
+                        gap: 2px;
+                        // border: none;
+                        border-radius: 30px;
+                        // align-items: center;
+                        padding-left: 4px;
+                        padding-right: 4px;
+
+                        h3{
+                            font-size: 10px;
+                        }
+    
+                        &_img{
+                            width: 11px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main{
+    &__block_btn{
+        font-family: "Arsenal", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        margin-top: 10px;
+        width: 248px;
+        height: 40px;
+        border-radius: 30px;
+        color: white;
+        background-color: #2C298C;
+        border: 4px solid #7155C6;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .main{
+        &__block_btn{
+            text-align: center;
+            font-family: "Arsenal", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 10px;
+            margin-top: 10px;
+            width: 115px;
+            height: 20px;
+            border-radius: 30px;
+            color: white;
+            background-color: #2C298C;
+            border: 1px solid #7155C6;
+            white-space: nowrap;
+        }
+    }
+    
+}
+
+.contacts{
+    /* Общие стили для before и after */
+    *:before,
+    *:after {
+    z-index: 1;
+    }
+
+    /* Общие стили для кнопки */
+    .btn {
+        width: 1039px;
+        height: 137px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow: hidden;
+        border-radius: 30px;
+        border: 3px solid #7155C6;
+        font-family: "Montserrat", sans-serif;
+        font-size: 36px;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: #1E0C51;
+        padding-left: 30px;
+        margin-bottom: 40px;
+    }
+
+
+    /* Стили для текста/контента внутри кнопки */
+    .btn__content {
+    z-index: 2;
+    position: relative;
+    display: block;
+    transition: transform 1s;
+    color: white;
+    background-color: none;
+    }
+
+
+    .btn--reveal .btn__content {
+        transform: translateY(0);
+        transition: transform 0.9s ease; /* Animation duration for content */
+        background-color: none;
+    }
+
+    .btn--reveal:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: darken($color: #7155C6, $amount: 10);
+    transform: translateY(100%); /* Start off-screen */
+    transition: transform 1s ease-in;
+    }
+
+    .btn--reveal.btn--active:before {
+    transform: translateY(0);  /* slide up */
+    }
+}
