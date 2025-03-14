@@ -1,7 +1,7 @@
 const data = [
   {
     "id": 0,
-    "imageUrl": "%PUBLIC_URL%/assets/img/spec1.svg",
+    "imageUrl": "/kurs/assets/img/spec1.svg",
     "title": "@Shinka4u",
     "descriptionn": "Архитектурный визуализатор"
   },
