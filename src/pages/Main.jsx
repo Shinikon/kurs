@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import ModalTrigger from '../components/ModalTrigger';
+import ReviewModal from '../components/ReviewModal';
 
 import '../scss/app.scss';
 import Specialists from '../components/Specialists';
