@@ -30,8 +30,8 @@ function Header() {
                 </button>
             </div>
             <div className='footer__container--icons'>
-                <img src="../assets/img/Telegram.svg" alt="" />
-                <img src="../assets/img/Vk.svg" alt="" />
+                <img src="/kurs/assets/img/Telegram.svg" alt="" />
+                <img src="/kurs/assets/img/Vk.svg" alt="" />
             </div>
         </div>
     </div>
