@@ -97,7 +97,7 @@ function Main() {
 
           <section className="main__serv_services">
             <ModalTrigger 
-              children={<img src={mod1} alt="Архитектура" />}
+              children={<img src={mod1} alt="Архитектура" className='main__serv_services_img'/>}
               modalContent={
                 <div className="modal-content-wrapper">
                   <img src={mod11} alt="Архитектура" />
@@ -131,7 +131,7 @@ function Main() {
 
             <div>
               <ModalTrigger
-                children={<img src={mod2} alt="Игры" />}
+                children={<img src={mod2} alt="Игры" className='main__serv_services_img'/>}
                 modalContent={
                   <div className="modal-content-wrapper">
                     <img src={mod21} alt="Игры" />
@@ -161,7 +161,7 @@ function Main() {
               />
 
                 <ModalTrigger
-                  children={<img src={mod3} alt="HR" />}
+                  children={<img src={mod3} alt="HR" className='main__serv_services_img' />}
                   modalContent={
                     <div className="modal-content-wrapper">
                       <img src={mod31} alt="HR" />
