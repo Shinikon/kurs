@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/kurs/static/css/main.27ffdb68.css",
+    "main.js": "/kurs/static/js/main.94800dbd.js",
+    "static/media/plastic.svg": "/kurs/static/media/plastic.1e631342affdbdc59fb395581103a67b.svg",
+    "static/media/specPortf2.svg": "/kurs/static/media/specPortf2.0b3cff287d374bec993102e4eadc5266.svg",
+    "static/media/hr1.svg": "/kurs/static/media/hr1.f44a0d599d3dd2b6b4f63bdb9ae61c7c.svg",
+    "static/media/game1.svg": "/kurs/static/media/game1.fc9df291980d72e8fd5e70e97074d70a.svg",
+    "static/media/specPortf3.svg": "/kurs/static/media/specPortf3.4d73fe794c6bee5bc19dd18e56c1aac1.svg",
+    "static/media/rev3.svg": "/kurs/static/media/rev3.c10e9bbddbd60c86ebf08d8c3bbfb4e9.svg",
+    "static/media/specPortf1.svg": "/kurs/static/media/specPortf1.1f39e3011e653dc2fa338f6f4966cc75.svg",
+    "static/media/bannerportal.svg": "/kurs/static/media/bannerportal.db229de9a3cc043da38f44f08a6e692a.svg",
+    "static/media/arch.svg": "/kurs/static/media/arch.d9b26ee2cc34fddbaeccb85a19d712f4.svg",
+    "static/media/rev1.svg": "/kurs/static/media/rev1.82efae39892682fe50e1b42154392ead.svg",
+    "static/media/arch1.svg": "/kurs/static/media/arch1.36dc4791478e941ff2a1150bad27a2a4.svg",
+    "static/media/game.svg": "/kurs/static/media/game.2610bf325ccf438c72c169db27bd1d6d.svg",
+    "static/media/hr.svg": "/kurs/static/media/hr.3f566cd443977b16fe2a9e140c30b43a.svg",
+    "static/media/rev2.svg": "/kurs/static/media/rev2.246f84d6dfb450f0c6fc1dd9562846b9.svg",
+    "static/media/Vk.svg": "/kurs/static/media/Vk.f212d7b1923d8b2cf21a5b1b96c98fd7.svg",
+    "static/media/logo.svg": "/kurs/static/media/logo.6612cb4e5503ef017ce56d572b2460e4.svg",
+    "index.html": "/kurs/index.html",
+    "static/media/Telegram.svg": "/kurs/static/media/Telegram.d373673e02d8fae3150ca9b59e621648.svg",
+    "static/media/close.svg": "/kurs/static/media/close.0a2447136d425a39b8fdd3f2cbdeca8e.svg",
+    "static/media/addFile.svg": "/kurs/static/media/addFile.8ee088f9d4012b6cd991cc74a51d508e.svg",
+    "main.27ffdb68.css.map": "/kurs/static/css/main.27ffdb68.css.map",
+    "main.94800dbd.js.map": "/kurs/static/js/main.94800dbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27ffdb68.css",
+    "static/js/main.94800dbd.js"
+  ]
+}
