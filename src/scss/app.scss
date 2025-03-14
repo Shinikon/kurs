@@ -73,7 +73,7 @@ hr{
 
 .main{
     margin-top: 50px;
-    // margin-left: 60px;
+    margin-left: 60px;
     overflow: hidden;
     &__title{
         text-transform: uppercase;
@@ -123,7 +123,7 @@ hr{
         margin-top: 125px;
         &-title{
             color: white;
-    
+            margin-bottom: 40px;
         }
         &_services{
             display: flex;
@@ -251,10 +251,10 @@ hr{
         padding: 0;
     }
 
-    // .App{
-    //     padding-left: 30px;
-    //     padding-right: 30px;
-    // }
+    .App{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .main{
         margin: 0;
         margin-left: 0px;
@@ -292,6 +292,10 @@ hr{
             margin-top: 50px;
             display: block; 
 
+            &-title{
+                margin-bottom: 10px;
+            }
+
             &_services{
                 padding-top: 20px;
                 display: flex;
@@ -320,6 +324,10 @@ hr{
                     
                     button{
                         padding: 12px 9px 12px 9px;
+
+                        h2{
+                            font-size: 16px;
+                        }
 
                         h3{
                             padding-top: 0px;
@@ -408,10 +416,10 @@ hr{
         padding: 0;
     }
 
-    // .App{
-    //     padding-left: 5px;
-    //     padding-right: 5px;
-    // }
+    .App{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     .main{
         width: 320px;
         // margin-left: 0px;
@@ -456,6 +464,10 @@ hr{
             margin-top: 30px;
             display: block; 
             // align-items: center;
+
+            &-title{
+                margin-bottom: 0px;
+            }
 
             &_services{
                 // width: 300px;

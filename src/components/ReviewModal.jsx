@@ -1,8 +1,8 @@
 // src/ReviewModal.jsx
 import React, { useState } from 'react';
 import Modal from './Modal';
-import './ReviewModal.css';
-import add from './add.png';
+import '../scss/app.scss';
+import add from '../assets/img/addFile.svg';
 
 const ReviewModal = ({ isOpen, onClose }) => {
     const [name, setName] = useState('');
@@ -34,7 +34,8 @@ const ReviewModal = ({ isOpen, onClose }) => {
             agreement,
         });
 
-        onClose();
+        onClose(); // Закрываем модальное окно
+        alert('Спасибо за ваш отзыв!'); // Отображаем уведомление об успехе
     };
 
     return (

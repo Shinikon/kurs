@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 import ModalTrigger from '../components/ModalTrigger';
@@ -23,6 +23,12 @@ import mod31 from '../assets/img/hr1.svg'
 // import add from "../assets/img/addFile.svg"
 
 function Main() {
+
+  const [isReviewModalOpen, setIsReviewModalOpen] = useState(false); // Состояние для управления видимостью модального окна
+
+  const handleCloseReviewModal = () => {
+      setIsReviewModalOpen(false); // Функция для закрытия модального окна
+  };
 
 //   const reviewModalContent = (
 //     <div className="review-modal">
@@ -207,11 +213,14 @@ function Main() {
                     <button>
                         <span><h2>02</h2></span><h3>Получи готовую 3D-модель</h3>
                     </button>
+
                     <ModalTrigger
-                        modalContent={<ReviewModal />}
+                        modalContent={<ReviewModal isOpen={isReviewModalOpen} onClose={handleCloseReviewModal} />}
                         isReview={true}
                     >
-                        <h3>Напиши отзыв</h3>
+                        <button>  {/* Correctly placed button */}
+                            <span><h2>03</h2></span><h3>Напиши отзыв</h3>
+                        </button>
                     </ModalTrigger>
                 </div>
                 <hr />
