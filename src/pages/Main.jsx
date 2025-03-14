@@ -19,48 +19,48 @@ import mod3 from '../assets/img/hr.svg'
 import mod11 from '../assets/img/arch1.svg'
 import mod21 from '../assets/img/game1.svg'
 import mod31 from '../assets/img/hr1.svg'
-import add from "../assets/img/addFile.svg"
+// import add from "../assets/img/addFile.svg"
 
 function Main() {
 
-  const reviewModalContent = (
-    <div className="review-modal">
-      <div className="review-file-upload" onClick={() => document.getElementById('fileInput').click()}>
-           <span> <h2>Прикрепить файл</h2>
-           <img src={add} alt="" /></span>
+//   const reviewModalContent = (
+//     <div className="review-modal">
+//       <div className="review-file-upload" onClick={() => document.getElementById('fileInput').click()}>
+//            <span> <h2>Прикрепить файл</h2>
+//            <img src={add} alt="" /></span>
 
-          <input type="file" id="fileInput" />
-      </div>
+//           <input type="file" id="fileInput" />
+//       </div>
 
-      <div className="review-form-inputs">
-          <div className="review-name-email">
-            <div>
-                <div className="review-form-label"><h3>Имя</h3></div>
-                <input type="text" placeholder="Иванов Иван" />
-              </div>
-              <div>
-                <div className="review-form-label"><h3>Почта</h3></div>
-                <input type="email" placeholder="Email" />
-              </div>
-          </div>
-          <div className="review-form-label"><h3>Номер телефона</h3></div>
-          <div className="review-phone">
-              <input type="tel" placeholder="+7(---)--- -- --" />
-          </div>
-          <div className="review-form-label"><h3>Отзыв</h3></div>
-          <div className="review-text-area">
-              <textarea placeholder="Ваш отзыв" />
-          </div>
-          <div className="review-checkbox">
-            <nobr>  
-              <input type="checkbox" id="agreement" />
-              <label htmlFor="agreement">Согласие на обработку персональных данных</label>
-            </nobr>
-          </div>
-        <button className="review-submit-button">Отправить отзыв</button>
-      </div>
-    </div>
-);
+//       <div className="review-form-inputs">
+//           <div className="review-name-email">
+//             <div>
+//                 <div className="review-form-label"><h3>Имя</h3></div>
+//                 <input type="text" placeholder="Иванов Иван" />
+//               </div>
+//               <div>
+//                 <div className="review-form-label"><h3>Почта</h3></div>
+//                 <input type="email" placeholder="Email" />
+//               </div>
+//           </div>
+//           <div className="review-form-label"><h3>Номер телефона</h3></div>
+//           <div className="review-phone">
+//               <input type="tel" placeholder="+7(---)--- -- --" />
+//           </div>
+//           <div className="review-form-label"><h3>Отзыв</h3></div>
+//           <div className="review-text-area">
+//               <textarea placeholder="Ваш отзыв" />
+//           </div>
+//           <div className="review-checkbox">
+//             <nobr>  
+//               <input type="checkbox" id="agreement" />
+//               <label htmlFor="agreement">Согласие на обработку персональных данных</label>
+//             </nobr>
+//           </div>
+//         <button className="review-submit-button">Отправить отзыв</button>
+//       </div>
+//     </div>
+// );
 
   return (
     <div className="wrapper">
@@ -196,28 +196,25 @@ function Main() {
 
 
         <div className="main__reviews">
-
-          <div className="main__reviews_top">
-            <div className="main__reviews_top_block">
-            <Link to="/Order"
-            style={{
-              textDecoration:'none'
-            }}>
-              <button><span><h2>01</h2></span><h3>Оформи заказ</h3></button>
-            </Link>
-            <button><span><h2>02</h2></span><h3>Получи готовую 3D-модель</h3></button>
-            <button><span><h2>03</h2></span><h3>
-            <ModalTrigger
-                                children={<h3>Напиши отзыв</h3>}
-                                modalContent={
-                                  reviewModalContent
-                                }
-                                isReview={true}
-                            />
-              </h3></button>
+            <div className="main__reviews_top">
+                <div className="main__reviews_top_block">
+                    <Link to="/Order" style={{ textDecoration: 'none' }}>
+                        <button>
+                            <span><h2>01</h2></span><h3>Оформи заказ</h3>
+                        </button>
+                    </Link>
+                    <button>
+                        <span><h2>02</h2></span><h3>Получи готовую 3D-модель</h3>
+                    </button>
+                    <ModalTrigger
+                        modalContent={<ReviewModal />}
+                        isReview={true}
+                    >
+                        <h3>Напиши отзыв</h3>
+                    </ModalTrigger>
+                </div>
+                <hr />
             </div>
-            <hr />
-          </div>
 
 
           <div className="main__reviews_bottom">
