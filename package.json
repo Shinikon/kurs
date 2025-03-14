@@ -20,7 +20,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "push-dir --dir=build --branch=gh-pages --verbose",
+    "deploy": "push-dir --dir=build --branch=gh-pages --remote origin --verbose",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
