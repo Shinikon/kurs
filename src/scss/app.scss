@@ -42,6 +42,9 @@ p{
 ul,li{
     margin: 0;
     padding: 0;
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body{
@@ -301,14 +304,10 @@ hr{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 0px;
+                // gap: 30px;
                 &_img{
                     height: auto;
                     width: 684px;
-                }
-                :nth-child(2){
-                    display: block;
-                    padding-top: 30px;
                 }
             }
         }
@@ -474,15 +473,11 @@ hr{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 0px;
+                gap: 10px;
 
                 &_img{
                     height: auto;
                     width: 300px;
-                }
-                :nth-child(2){
-                    display: block;
-                    padding-top: 13px;
                 }
             }
         }
@@ -793,15 +788,24 @@ hr{
 
 
 .contacts{
-    margin-top: 50px;
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    // margin-left: 60px;
+    align-items: center;
     justify-content: center;
+    &__title{
+        margin-top: 50px;
+        margin-left: 129px;
+        margin-right: auto;
+    }
+
     .buttons-animation{
         margin-top: 40px;
-        margin-left: 143px;
+        // margin-left: 143px;
     }
     &__phone{
-        margin-left: 150px;
+        margin-right: auto;
+        margin-left: 201px;
         :last-child{
             padding-top: 10px;
         }

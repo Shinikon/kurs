@@ -62,6 +62,7 @@ const ReviewModal = ({ onClose }) => {
                                 onChange={(e) => setName(e.target.value)}
                                 className="custom-input"
                             />
+                            
                         </div>
                         <div>
                             <div className="review__form-label"><h3>Почта</h3></div>
@@ -87,7 +88,7 @@ const ReviewModal = ({ onClose }) => {
                     <div className="review__form-label"><h3>Отзыв</h3></div>
                     <div className="review__text-area">
                         <textarea
-                            placeholder="Ваш отзыв"
+                            placeholder="Ваш отзыв..."
                             value={comment}
                             onChange={(e) => setComment(e.target.value)}
                             className="custom-textarea"
