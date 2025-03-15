@@ -136,6 +136,9 @@
     
 }
 
+
+
+
 .contacts{
     /* Общие стили для before и after */
     *:before,
@@ -168,6 +171,11 @@
         background-color: #1E0C51;
         padding-left: 30px;
         margin-bottom: 40px;
+
+
+        &__initial-content{
+
+        }
     }
 
 
@@ -204,4 +212,127 @@
     .btn--reveal.btn--active:before {
     transform: translateY(0);  /* slide up */
     }
+}
+
+
+@media (max-width: 768px) {
+
+    .contacts{
+        align-items: center;
+        /* Общие стили для before и after */
+        *:before,
+        *:after {
+        z-index: 1;
+        }
+    
+        /* Общие стили для кнопки */
+        .btn {
+            width: 631px;
+            height: 83px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            border: 3px solid #7155C6;
+        }
+    
+    
+        /* Стили для текста/контента внутри кнопки */
+        .btn__content {
+        z-index: 2;
+        position: relative;
+        display: block;
+        transition: transform 1s;
+        color: white;
+        background-color: none;
+        }
+    
+    
+        .btn--reveal .btn__content {
+            transform: translateY(0);
+            transition: transform 0.9s ease; /* Animation duration for content */
+            background-color: none;
+        }
+    
+        .btn--reveal:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: darken($color: #7155C6, $amount: 10);
+        transform: translateY(100%); /* Start off-screen */
+        transition: transform 1s ease-in;
+        }
+    
+        .btn--reveal.btn--active:before {
+        transform: translateY(0);  /* slide up */
+        }
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .contacts{
+        align-items: center;
+        /* Общие стили для before и after */
+        *:before,
+        *:after {
+        z-index: 1;
+        }
+    
+        /* Общие стили для кнопки */
+        .btn {
+            width: 292px;
+            height: 29px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 0;
+            margin-bottom: 10px;
+
+            border: 2px solid #7155C6;
+        }
+    
+    
+        /* Стили для текста/контента внутри кнопки */
+        .btn__content {
+        z-index: 2;
+        position: relative;
+        display: block;
+        transition: transform 1s;
+        color: white;
+        background-color: none;
+        }
+    
+    
+        .btn--reveal .btn__content {
+            transform: translateY(0);
+            transition: transform 0.9s ease; /* Animation duration for content */
+            background-color: none;
+        }
+    
+        .btn--reveal:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: darken($color: #7155C6, $amount: 10);
+        transform: translateY(100%); /* Start off-screen */
+        transition: transform 1s ease-in;
+        }
+    
+        .btn--reveal.btn--active:before {
+        transform: translateY(0);  /* slide up */
+        }
+    }
+    
 }
