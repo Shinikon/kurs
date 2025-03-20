@@ -5,13 +5,15 @@
     color: white;
     &__container{
         display: flex;
-        
         &_box{
+            margin-left: -95px;
             &_title{
+                width: 933px;
                 margin-top: 100px;
                 text-transform: uppercase;
             }
             &_text{
+                margin-top: 25px;
                 margin-bottom: 20px;
             }
         }
@@ -37,6 +39,7 @@
                 }
             }
             &_box{
+                margin-left: -15px;
                 width: 350px;
                 height: 200px;
                 &_title{
