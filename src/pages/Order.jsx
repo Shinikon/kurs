@@ -10,14 +10,14 @@ function Order() {
 
       <div className="wrapper">
         <div className="order">
-          <h2 className="main__title">
+          <h2 className="order__title">
             Заказать проект
           </h2>
-          <div className="block">
+          <div className="order__block">
             <div>
               <h3>О задаче</h3>
             </div>
-            <div className="form">
+            <div className="order__block_form">
               <form action="">
                 <label>
                   <p>Ваше имя...</p>
@@ -32,19 +32,14 @@ function Order() {
               </form>
             </div>
           </div>
-          <div className="img">
-          <div className="background-image-container">
-                <img src={box} alt="Background Image" className="background-image" />
-          </div>
-          </div>
-          <div className="block"
-          style={{
-            marginTop:'80px'
-          }}>
-            <div>
-              <h3>Необходимая услуга</h3>
+          <div className="order__img">
+            <div className="order__img_container">
+                  <img src={box} alt="Background Image" className="order__img_container_background" />
             </div>
-            <div className="categories">
+          </div>
+          <div className="order__box">
+              <h3>Необходимая услуга</h3>
+            <div className="order__block_categories">
             <ButtonGroup />
             </div>
           </div>
