@@ -105,7 +105,7 @@ const ReviewModal = ({ onClose }) => {
                             <label htmlFor="agreement">Согласие на обработку персональных данных</label>
                         </nobr>
                     </div>
-                    <button type="submit" className="review__submit-button"><p>Отправить отзыв</p></button>
+                    <button type="submit" className="review__submit-button">Отправить отзыв</button>
                 </div>
             </form>
         </div>

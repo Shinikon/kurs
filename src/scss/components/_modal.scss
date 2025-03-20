@@ -22,15 +22,13 @@
   background-color: #7155C6;
   color: white;
   h1{
-    margin-top: -40px;
+    margin-top: 0px;
     text-align: center;
+    margin-bottom: 26px;
   }
   
   p{
     padding-top: 12px;
-  }
-  p:first-of-type{
-    padding-top: 26px;
   }
   ul{
     padding-top: 12px;
@@ -39,6 +37,8 @@
 
 
 .modal-text-content{
+  display: flex;
+  flex-direction: column;
   align-self: center;
   align-items: center;
   margin-right: 63px;
@@ -46,6 +46,7 @@
   // gap: 12px;
 
   button{
+    margin-top: 38px;
     padding: 10px 15px;
     border: none!important;
 
@@ -127,7 +128,8 @@ object-fit: cover; /* Масштабирует изображение, сохр�
   
   .modal-text-content{
     padding-top: 20px;
-    display: flex!important;
+    display: flex;
+    flex-direction: column;
     align-self: center;
     align-items: center;
     margin-right: 63px;
@@ -219,7 +221,8 @@ object-fit: cover; /* Масштабирует изображение, сохр�
   
   .modal-text-content{
     padding-top: 20px;
-    display: flex!important;
+    display: flex;
+    flex-direction: column;
     align-self: center;
     align-items: center;
     margin-right: 10px;
@@ -291,7 +294,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
   color:  #1E0C51;
   display: flex;
   width: 1324px;
-  height: 800px;
+  height: 870px;
 
   h1,
   h2,
@@ -332,7 +335,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
   &__form-inputs { // Changed .review-form-inputs to .review__form-inputs
     padding-left: 48px;
-    padding-top: 71px;
+    padding-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -352,7 +355,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       border: 1px solid #1E0C51;
       background-color: transparent;
       border-radius: 46px;
-      width: 272px;
+      width: 240px;
       height: 66px;
       font-size: 24px;
     }
@@ -390,7 +393,8 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
   &__name-email { // Changed .review-name-email to .review__name-email
     display: flex;
-    margin-bottom: 10px;
+    gap: 30px;
+    // margin-bottom: 10px;
 
     div {
       margin-right: 10px;
@@ -400,17 +404,18 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       }
 
       input {
-        width: 272px;
+        width: 240px;
       }
     }
   }
 
   &__phone {  // Changed .review-phone to .review__phone
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
   }
 
   &__text-area { // Changed .review-text-area to .review__text-area
     margin-bottom: 10px;
+    // margin-top: 20px;
   }
 
   nobr {
@@ -427,8 +432,11 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       padding-top: 3px;
       text-align: auto;
       margin-left: 5px;
-      font-size: 16px;
       color: #FFFFFF;
+      font-family: "Arsenal", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
     }
 
     input {
@@ -438,23 +446,38 @@ object-fit: cover; /* Масштабирует изображение, сохр�
   }
 
   &__submit-button { // Changed .review-submit-button to .review__submit-button
-    padding: 10px 15px;
+    padding: 28px 50px ;
     border: none!important;
 
     color: #FFFFFF;
     background-color: #1E0C51!important;
     cursor: pointer;
     display: flex;
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    border-radius: 4px;
-    width: 221px!important;
+    border-radius: 90px;
+    width: 221px;
     // height: !important;
+    font-family: "Arsenal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 76px;
+
   }
 
   &__form-label { // Changed .review-form-label to .review__form-label
     text-align: left;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 17px;
+
+    // input{
+    //   width: 250px;
+    // }
   }
 }
 
@@ -463,7 +486,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
   .modal-close-button {
     position: absolute;
-    top: -40px;
+    top: 10px;
     right: 0px;
     background: none;
     border: none !important;
@@ -476,7 +499,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     color:  #1E0C51;
     display: flex;
     width: 662px;
-    height: auto;
+    height: 820px;
     justify-content: center;
 
     h3{
@@ -506,21 +529,24 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     }
   
     &__file-upload { // Changed .review-file-upload to .review__file-upload
-      padding-top: 0px;
-      width: 662px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #AD6BDF;
-      justify-content: space-between;
-      text-align: center;
-      cursor: pointer;
+      // padding-top: 0px;
+      // width: 662px;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // background-color: #AD6BDF;
+      // justify-content: space-between;
+      // text-align: center;
+      // cursor: pointer;
+      display: none;
 
       img{
         margin-top: 10px;
       }
       
     }
+
+
   
     &__form-inputs { // Changed .review-form-inputs to .review__form-inputs
       padding-left: 20px;
@@ -640,15 +666,23 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       color: #FFFFFF;
       background-color: #1E0C51!important;
       cursor: pointer;
-      border-radius: 4px;
-      width: 100%;
+      // width: 100%;
       margin-bottom: 20px;
+      height: 76px;
+      width: 221px;
+      // height: !important;
+      font-family: "Arsenal", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+      color: white;
     }
   
     &__form-label { // Changed .review-form-label to .review__form-label
       text-align: left;
       font-weight: bold;
-      margin-bottom: 5px;
+      margin-top: 20px;
+      margin-bottom: 17px;
     }
   }
   
@@ -658,7 +692,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
   .modal-close-button {
     position: absolute;
-    top: -40px;
+    top: 10px;
     right: 0px;
     background: none;
     border: none !important;
@@ -702,31 +736,32 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       flex-direction: column;
       width: 320px;
       height: auto;
-    }
-  
-    &__file-upload { // Changed .review-file-upload to .review__file-upload
-      padding-top: 0px;
-      width: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #AD6BDF;
-      justify-content: space-between;
-      text-align: center;
-      cursor: pointer;
-
-      img{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 20px;
-        height: 20px;
-      }
       
     }
   
+    // &__file-upload { // Changed .review-file-upload to .review__file-upload
+    //   padding-top: 0px;
+    //   width: auto;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   background-color: #AD6BDF;
+    //   justify-content: space-between;
+    //   text-align: center;
+    //   cursor: pointer;
+
+    //   img{
+    //     margin-top: 5px;
+    //     margin-bottom: 5px;
+    //     width: 20px;
+    //     height: 20px;
+    //   }
+      
+    // }
+  
     &__form-inputs { // Changed .review-form-inputs to .review__form-inputs
-      padding-left: 10px;
-      padding-top: 20px;
+      padding-top: 10px;
+      padding-left: 20px;
       display: flex;
       flex-direction: column;
       justify-content: left;
@@ -756,7 +791,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
         padding: 8px;
         margin-bottom: 10px;
         background-color: #AD6BDF;
-        border-radius: 46px;
+        border-radius: 20px;
         width: 273px;
         height: 146px;
       }
@@ -765,6 +800,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     &__name-email { // Changed .review-name-email to .review__name-email
       display: flex;
       margin-bottom: 10px;
+      gap: 10px;
   
       div {
         margin-right: 20px;
@@ -790,6 +826,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
         padding-left: 20px;
         padding-top: 20px;
         font-size: 10px;
+        margin-bottom: 9px;
       }
 
       // ::placeholder {
@@ -822,7 +859,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       font-size: 10px;
   
       label {
-        padding-top: 3px;
+        padding-top: 0px;
         text-align: auto;
         margin-left: 5px;
         font-size: 10px;
@@ -841,15 +878,21 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       color: #FFFFFF;
       background-color: #1E0C51!important;
       cursor: pointer;
-      border-radius: 4px;
-      margin-bottom: 20px;
+      margin-top: 5px;
+      // margin-bottom: 20px;
       font-size: 16px;
+      width: 120px;
+      height: 32px;
+      font-size: 10px;
+      margin-top: 0px;
+      margin-bottom: 10px;
     }
   
     &__form-label { // Changed .review-form-label to .review__form-label
       text-align: left;
       font-weight: bold;
       margin-bottom: 5px;
+      margin-top: 5px;
     }
   }
   

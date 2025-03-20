@@ -1,30 +1,27 @@
-import '../scss/app.scss';
-import '../scss/components/_buttons.scss';
-import ContactsBtns from '../components/ContactsBtns'
-import ContactForm from '../components/ContactForm'
- 
-function Contacts() {
+import "../scss/app.scss";
+import "../scss/components/_buttons.scss";
+import ContactsBtns from "../components/ContactsBtns";
+import ContactForm from "../components/ContactForm";
 
+function Contacts() {
   return (
     <div className="wrapper">
       <div className="contacts">
         <div className="contacts__title">
-          <h1>
-            Контакты
-          </h1>
+          <h1>Контакты</h1>
         </div>
         <div className="buttons-animation">
           <ContactsBtns
-          initialContent="Написать на почту"
-          toggledContent="info@Vertex Visions.studio"
+            initialContent="Написать на почту"
+            toggledContent="info@Vertex Visions.studio"
           />
           <ContactsBtns
-          initialContent="Написать Вконтакте"
-          toggledContent="info@Vertex Visions.studio"
+            initialContent="Написать Вконтакте"
+            toggledContent="info@Vertex Visions.studio"
           />
           <ContactsBtns
-          initialContent="Написать в Телеграм"
-          toggledContent="info@Vertex Visions.studio"
+            initialContent="Написать в Телеграм"
+            toggledContent="info@Vertex Visions.studio"
           />
         </div>
         <div className="contacts__phone">
@@ -33,13 +30,10 @@ function Contacts() {
         </div>
 
         <div className="contacts__title">
-          <h2>
-            ИЛИ
-          </h2>
+          <h2>заполните форму</h2>
         </div>
-      <ContactForm />
+        <ContactForm />
       </div>
-      
     </div>
   );
 }
