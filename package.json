@@ -1,6 +1,6 @@
 {
   "homepage": "https://shinikon.github.io/kurs/",
-  "name": "kursovaya",
+  "name": "kurs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
