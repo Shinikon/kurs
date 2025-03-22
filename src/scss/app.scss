@@ -127,7 +127,7 @@ hr{
 
 
     &__serv{
-        margin-top: 125px;
+        margin-top: 50px;
         &-title{
             color: white;
             margin-bottom: 40px;
@@ -299,7 +299,6 @@ hr{
 
         &__serv { 
             width: 689px;
-            margin-top: 50px;
             display: block; 
 
             &-title{
@@ -362,6 +361,7 @@ hr{
                     // display: none;  
                 }
             }
+
     
             &_bottom{
                 margin-top: 20px;
@@ -470,7 +470,7 @@ hr{
 
         &__serv { 
             width: 300px;
-            margin-top: 30px;
+            margin-top: 20px;
             display: block; 
             // align-items: center;
 
@@ -488,7 +488,18 @@ hr{
 
                 &_img{
                     height: auto;
-                    width: 300px;
+                    width: 298px;
+                }
+
+                &_side{
+                    gap: 7px;
+                    &_img{
+                        width: 298px;
+                        height: 180px;
+                    }
+                    // height: auto;
+                    // width: none;
+                    // display:grid;
                 }
             }
         }
@@ -519,6 +530,8 @@ hr{
                             }
                         }
                     }
+
+
                     // :not(:last-child){
                     //     display: none;
                     // }
@@ -725,9 +738,9 @@ hr{
     overflow: hidden;
 
     input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s; /* Важно! */
   -webkit-text-fill-color: white !important; /* Цвет текста */
   -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Заменяет background */
@@ -742,75 +755,75 @@ input:-webkit-autofill:active {
         display: grid;
         grid-template-columns: 264px 813px;
         
-        &_form{
-            margin-left: 87px;
-            margin-top: 66px;
+        // &_form{
+        //     margin-left: 87px;
+        //     // margin-top: 66px;
 
-            label{
-                display: flex;
-                flex-direction: column;
-                // z-index: 1;
-                ::placeholder{
-                    color: white;
-                    font-family: "Arsenal", sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
-                    font-size: 16px;
+        //     label{
+        //         display: flex;
+        //         flex-direction: column;
+        //         // z-index: 1;
+        //         ::placeholder{
+        //             color: white;
+        //             font-family: "Arsenal", sans-serif;
+        //             font-weight: 400;
+        //             font-style: normal;
+        //             font-size: 16px;
 
-                }
+        //         }
 
-                .custom-input {
-                    padding: 23px;
-                    padding-left: 0;
-                    // padding-right: 40px;
-                    border-bottom: solid 1px #fff;
-                  }
+        //         .custom-input {
+        //             padding: 23px;
+        //             padding-left: 0;
+        //             // padding-right: 40px;
+        //             border-bottom: solid 1px #fff;
+        //           }
               
-                  .custom-textarea {
-                    padding: 23px;
-                    padding-left: 0;
-                    padding-bottom: 15px;
-                //   padding-right: 20px;
-                    border-bottom: solid 1px #fff;
-                  }
+        //           .custom-textarea {
+        //             padding: 23px;
+        //             padding-left: 0;
+        //             padding-bottom: 15px;
+        //         //   padding-right: 20px;
+        //             border-bottom: solid 1px #fff;
+        //           }
     
-                  textarea{
-                    background-color: transparent;
-                    border:none;
-                    color: white;
-                    width: 645px;
-                    box-sizing: border-box;
-                    resize: vertical;
+        //           textarea{
+        //             background-color: transparent;
+        //             border:none;
+        //             color: white;
+        //             width: 645px;
+        //             box-sizing: border-box;
+        //             resize: vertical;
                     
-                    &:focus {
-                        outline: none;}
-                  }
+        //             &:focus {
+        //                 outline: none;}
+        //           }
                 
-                input{
-                    width: 300px;
-                    background-color: transparent;
-                    border: none;
-                    color: #fff;
-                    // border-bottom: solid 1px #fff;
+        //         input{
+        //             width: 300px;
+        //             background-color: transparent;
+        //             border: none;
+        //             color: #fff;
+        //             // border-bottom: solid 1px #fff;
                     
-                    width: 623px;
-                    font-size: 16px;
+        //             width: 623px;
+        //             font-size: 16px;
 
 
 
-                    &:focus {
-                        outline: none;
-                        color: #fff;                
-                      }
-                      :last-of-type{
-                        overflow:scroll;
-                      }
-                }
-                p{
-                    margin-bottom: 0px;
-                }
-            }
-        }
+        //             &:focus {
+        //                 outline: none;
+        //                 color: #fff;                
+        //               }
+        //               :last-of-type{
+        //                 overflow:scroll;
+        //               }
+        //         }
+        //         p{
+        //             margin-bottom: 0px;
+        //         }
+        //     }
+        // }
     }
 
     &__box{
@@ -849,65 +862,65 @@ input:-webkit-autofill:active {
             display: flex;
             flex-direction: column;
             
-            &_form{
-                margin-left: 0px;
-                margin-top: 20px;
-                display: flex;
-                padding-left: 31px;
+            // &_form{
+            //     margin-left: 0px;
+            //     margin-top: 20px;
+            //     display: flex;
+            //     padding-left: 31px;
     
-                label{
-                    display: flex;
-                    flex-direction: column;
-                    z-index: 1;
+            //     label{
+            //         display: flex;
+            //         flex-direction: column;
+            //         z-index: 1;
 
-                    .custom-input {
-                        padding: 23px;
-                        padding-left: 0;
-                        // padding-right: 40px;
-                        border-bottom: solid 1px #fff;
-                      }
+            //         .custom-input {
+            //             padding: 23px;
+            //             padding-left: 0;
+            //             // padding-right: 40px;
+            //             border-bottom: solid 1px #fff;
+            //           }
                   
-                      .custom-textarea {
-                        padding: 23px;
-                        padding-left: 0;
-                        padding-bottom: 15px;
-                    //   padding-right: 20px;
-                        border-bottom: solid 1px #fff;
-                      }
+            //           .custom-textarea {
+            //             padding: 23px;
+            //             padding-left: 0;
+            //             padding-bottom: 15px;
+            //         //   padding-right: 20px;
+            //             border-bottom: solid 1px #fff;
+            //           }
         
-                      textarea{
-                        background-color: transparent;
-                        border:none;
-                        color: white;
-                        width: 645px;
-                        box-sizing: border-box;
-                        resize: vertical;
+            //           textarea{
+            //             background-color: transparent;
+            //             border:none;
+            //             color: white;
+            //             width: 645px;
+            //             box-sizing: border-box;
+            //             resize: vertical;
                         
-                        &:focus {
-                            outline: none;}
-                      }
+            //             &:focus {
+            //                 outline: none;}
+            //           }
                     
-                    input{
-                        background-color: transparent;
-                        border: none;
-                        color: #fff;
-                        // border-bottom: solid 1px #fff;
-                        width: 623px;
-                        font-size: 16px;
+            //         input{
+            //             background-color: transparent;
+            //             border: none;
+            //             color: #fff;
+            //             // border-bottom: solid 1px #fff;
+            //             width: 623px;
+            //             font-size: 16px;
     
-                        &:focus {
-                            outline: none;
-                            color: #fff;                
-                          }
-                          :last-of-type{
-                            overflow:scroll;
-                          }
-                    }
-                    p{
-                        margin-bottom: 0px;
-                    }
-                }
-            }
+            //             &:focus {
+            //                 outline: none;
+            //                 color: #fff;                
+            //               }
+            //               :last-of-type{
+            //                 overflow:scroll;
+            //               }
+            //         }
+            //         p{
+            //             margin-bottom: 0px;
+            //         }
+            //     }
+            // }
         }
     
         &__box{
@@ -949,78 +962,78 @@ input:-webkit-autofill:active {
                 font-size: 10px;
             }
             
-            &_form{
-                // margin-left: 0px;
-                margin-top: 0px;
-                display: flex;
-                padding-left: 0px;
-                margin-left: 0;
-                margin-right: 0;
+            // &_form{
+            //     // margin-left: 0px;
+            //     margin-top: 0px;
+            //     display: flex;
+            //     padding-left: 0px;
+            //     margin-left: 0;
+            //     margin-right: 0;
 
 
     
-                label{
-                    display: flex;
-                    flex-direction: column;
-                    z-index: 1;
+            //     label{
+            //         display: flex;
+            //         flex-direction: column;
+            //         z-index: 1;
 
-                    ::placeholder{
+            //         ::placeholder{
 
-                        font-size: 10px;
+            //             font-size: 10px;
     
-                    }
+            //         }
 
-                    .custom-input {
-                        padding: 0;
-                        padding-top: 14px;
-                        padding-bottom: 14px;
-                        padding-left: 0;
-                        // padding-right: 40px;
-                        border-bottom: solid 1px #fff;
-                        width: 280px;
-                      }
+            //         .custom-input {
+            //             padding: 0;
+            //             padding-top: 14px;
+            //             padding-bottom: 14px;
+            //             padding-left: 0;
+            //             // padding-right: 40px;
+            //             border-bottom: solid 1px #fff;
+            //             width: 280px;
+            //           }
                   
-                      .custom-textarea {
-                        padding: 14px;
-                        padding-left: 0;
-                        padding-bottom: 0px;
-                    //   padding-right: 20px;
-                        border-bottom: solid 1px #fff;
-                      }
+            //           .custom-textarea {
+            //             padding: 14px;
+            //             padding-left: 0;
+            //             padding-bottom: 0px;
+            //         //   padding-right: 20px;
+            //             border-bottom: solid 1px #fff;
+            //           }
         
-                      textarea{
-                        background-color: transparent;
-                        border:none;
-                        color: white;
-                        width: 280px;
-                        box-sizing: border-box;
-                        resize: vertical;
+            //           textarea{
+            //             background-color: transparent;
+            //             border:none;
+            //             color: white;
+            //             width: 280px;
+            //             box-sizing: border-box;
+            //             resize: vertical;
                         
-                        &:focus {
-                            outline: none;}
-                      }
+            //             &:focus {
+            //                 outline: none;}
+            //           }
                     
-                    input{
-                        width: 280px;
-                        background-color: transparent;
-                        border: none;
-                        color: #fff;
-                        // border-bottom: solid 1px #fff;
-                        font-size: 10px;
+            //         input{
+            //             width: 280px;
+            //             background-color: transparent;
+            //             border: none;
+            //             color: #fff;
+            //             // border-bottom: solid 1px #fff;
+            //             font-size: 10px;
     
-                        &:focus {
-                            outline: none;
-                            color: #fff;                
-                          }
-                          :last-of-type{
-                            overflow:scroll;
-                          }
-                    }
-                    p{
-                        margin-bottom: 0px;
-                    }
-                }
-            }
+            //             &:focus {
+            //                 outline: none;
+            //                 color: #fff;                
+            //               }
+            //               :last-of-type{
+            //                 overflow:scroll;
+            //               }
+            //         }
+            //         p{
+            //             margin-bottom: 0px;
+            //         }
+            //     }
+            // }
         }
     
         &__box{

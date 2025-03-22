@@ -1,0 +1,183 @@
+.order{
+        &__form{
+            display: flex;
+            flex-direction: column;
+            // margin-left: 351px;
+            margin-right: auto;
+            margin-top: 20px;
+
+            label{
+                margin-left: 335px;
+                display: flex;
+                flex-direction: column;
+                // z-index: 1;
+                ::placeholder{
+                    color: white;
+                    font-family: "Arsenal", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 16px;
+
+                }
+
+                .custom-input {
+                    padding: 23px;
+                    padding-left: 0;
+                    // padding-right: 40px;
+                    border-bottom: solid 1px #fff;
+                  }
+              
+                  .custom-textarea {
+                    padding: 23px;
+                    padding-left: 0;
+                    padding-bottom: 15px;
+                //   padding-right: 20px;
+                    border-bottom: solid 1px #fff;
+                  }
+    
+                  textarea{
+                    background-color: transparent;
+                    border:none;
+                    color: white;
+                    width: 645px;
+                    box-sizing: border-box;
+                    resize: vertical;
+                    
+                    &:focus {
+                        outline: none;}
+                  }
+                
+                input{
+                    width: 300px;
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    // border-bottom: solid 1px #fff;
+                    
+                    width: 623px;
+                    font-size: 16px;
+
+
+
+                    &:focus {
+                        outline: none;
+                        color: #fff;                
+                      }
+                      :last-of-type{
+                        overflow:scroll;
+                      }
+                }
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+
+            &_submit-button {
+                    width: 344px;
+                    height: 52px;
+                    margin-top: 40px;
+                    margin-left: 330px;
+                //   padding: 23px 35px;
+                  background-color: #261E74;
+                  color: white;
+                  border: none;
+                  border-radius: 35px;
+                  cursor: pointer;
+                  font-size: 24px;
+                  text-align: center;
+                  font-family: "Shanti", sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+            
+                  &:hover {
+                    // background-color: darken($accent-color, 10%);
+                  }
+                }
+        }
+
+        &__categories{
+            margin-top: 80px;
+            // margin-left: 0;
+            display: flex;
+
+            &_button-group {
+                margin-left: 95px;
+                // padding-top: 30px;
+                display: grid;
+                grid-template-columns: repeat(3,247px);     
+                gap: 36px;
+                &_btn {
+                    background-color: rgb(113,85,198,0.4); 
+                    color: #FFFFFF;                 
+                    border: none;                 
+                    // padding: 10px;                
+                    width: 247px;                  
+                    cursor: pointer;              
+                    transition: background-color 0.3s ease;
+                    font-family: "Arsenal", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 16px;
+                    border-radius: 44px;
+                    width: 247px;
+                    height: 47px;
+                  
+                  
+                    &:hover {
+                      background-color: lighten($color: #7155C6, $amount: 10); 
+                    }
+                  
+                  
+                    &_active {
+                      background-color: lighten($color: #7155C6, $amount: 10); 
+                      color: #fff;                
+                    }
+                  }
+              }
+        }
+        
+    }
+
+    
+
+      
+      
+
+      
+    //   @media (max-width: 768px) {
+      
+    //     &_button-group {
+    //       display: grid;
+    //       grid-template-columns: repeat(3,212px);     
+    //       gap: 10px;
+                  
+        
+    //     &_btn {
+    //         background-color: rgb(113,85,198,0.4); 
+    //         color: #FFFFFF;                 
+    //         border: none;                 
+    //         // padding: 10px;                
+    //         width: 212px;                  
+    //         cursor: pointer;              
+    //         transition: background-color 0.3s ease;
+    //         font-family: "Arsenal", sans-serif;
+    //         font-weight: 400;
+    //         font-style: normal;
+    //         font-size: 16px;
+    //         border-radius: 44px;
+    //         height: 34px;
+          
+          
+    //         &:hover {
+    //           background-color: lighten($color: #7155C6, $amount: 10); 
+    //         }
+          
+          
+    //         &_active {
+    //           background-color: lighten($color: #7155C6, $amount: 10); 
+    //           color: #fff;                
+    //         }
+    //       }
+    //     }
+        
+    //   }
