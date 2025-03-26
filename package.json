@@ -6,6 +6,8 @@
   "dependencies": {
     "@react-three/fiber": "^8.17.10",
     "cra-template": "1.2.0",
+    "embla-carousel-auto-scroll": "^8.5.2",
+    "embla-carousel-react": "^8.5.2",
     "react": "^19.0.0",
     "react-carousel3": "^1.0.0",
     "react-dom": "^19.0.0",
