@@ -102,9 +102,7 @@ function Main() {
                 </p>
               </div>
             </div>
-            <button className="main__block_btn">
-              Связаться с нами
-            </button>
+            <button className="main__block_btn">Связаться с нами</button>
           </div>
           <div className="main__block_spec">
             <p className="main__block_spec_title">Наши специалисты</p>
@@ -133,12 +131,7 @@ function Main() {
               modalContent={
                 <div className="modal-content-wrapper">
                   <img src={mod11} alt="Архитектура" />
-                  <div
-                    className="modal-text-content"
-                    style={{
-                      gap: "0px",
-                    }}
-                  >
+                  <div className="modal-text-content">
                     <h1>Архитектурная визуализация</h1>
                     <p>
                       Архитектурная 3D-визуализация — это процесс создания

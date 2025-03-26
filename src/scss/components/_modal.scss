@@ -26,14 +26,22 @@
   }
 
   p {
-    padding-top: 12px;
+    width: 521px;
+    padding-top: 0px;
   }
   ul {
-    padding-top: 12px;
+    width: 521px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    li{
+      margin-left: 30px;
+    }
   }
 }
 
 .modal-text-content {
+  width: 537px;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -186,10 +194,11 @@
     display: flex !important;
     line-height: 15px;
     h1 {
-      margin-top: -10px;
+      margin-top: 0px;
       line-height: normal;
       font-size: 16px;
       text-align: center;
+      margin-bottom: 8px;
     }
 
     p {

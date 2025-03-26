@@ -1,5 +1,14 @@
 
 .form {
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 5000s ease-in-out 0s; /* Важно! */
+      -webkit-text-fill-color: white !important; /* Цвет текста */
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Заменяет background */
+    }
     margin-top: 50px;
   display: grid;
   grid-template-columns: 271px 800px;
@@ -23,10 +32,12 @@
     }
 
     input{
-        outline-width: 0;
+        outline:none;
+        box-shadow:none;
+        // outline-width: 0;
       width: 231px;
       padding: 20px;
-      border: 1px solid white;
+      border: 1px solid #7155c6;
       border-radius: 40px;
       font-size: 16px;
       background-color: #1E0C51;
@@ -34,7 +45,7 @@
     }
 
     textarea {
-        border: 1px solid white;
+        border: 1px solid #7155c6;
         border-radius: 40px;
         padding: 20px;
         height: 489px;
@@ -134,7 +145,6 @@
                 outline-width: 0;
             width: 231px;
             padding: 20px;
-            border: 1px solid white;
             border-radius: 40px;
             font-size: 16px;
             background-color: #1E0C51;
@@ -142,7 +152,6 @@
             }
 
             textarea {
-                border: 1px solid white;
                 border-radius: 40px;
                 padding: 20px;
                 width: 587px;
@@ -246,7 +255,6 @@
             input{
             width: 105px;
             padding: 12px;
-            border: 1px solid white;
             border-radius: 40px;
             font-size: 10px;
             background-color: #1E0C51;
@@ -254,7 +262,6 @@
             }
 
             textarea {
-                border: 1px solid white;
                 border-radius: 40px;
                 padding: 20px;
                 width: 230px;
