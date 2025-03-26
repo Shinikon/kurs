@@ -8,9 +8,8 @@ const OrderForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [about, setAbout] = useState("");
-  const [activeIndex, setActiveIndex] = useState(null); // State for ButtonGroup
+  const [activeIndex, setActiveIndex] = useState(null); 
 
-  // Данные о кнопках
   const buttons = [
     { label: "Архитектурная визуализация", index: 0 },
     { label: "3D-модели для видеоигр", index: 1 },
@@ -24,9 +23,6 @@ const OrderForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Здесь можно добавить валидацию полей, если нужно
-
-    // Отправка данных (замените на реальную отправку)
     console.log("Отправка данных:", { name, phone, email, about, activeIndex });
 
     // Очистка полей
@@ -34,9 +30,8 @@ const OrderForm = () => {
     setPhone("");
     setEmail("");
     setAbout("");
-    setActiveIndex(null); // Reset active button
+    setActiveIndex(null); 
 
-    // Уведомление об успешной отправке
     alert("Форма успешно отправлена!");
   };
 
@@ -44,7 +39,6 @@ const OrderForm = () => {
     <div>
       <form className="order__form" onSubmit={handleSubmit}>
         {" "}
-        {/* Класс для стилизации*/}
         <label htmlFor="name">
           <input
             type="text"
@@ -110,7 +104,6 @@ const OrderForm = () => {
         <button type="submit" className="order__form_submit-button">
           Отправить
         </button>{" "}
-        {/* Стилизуйте эту кнопку */}
       </form>
     </div>
   );

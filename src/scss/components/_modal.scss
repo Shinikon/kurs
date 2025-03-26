@@ -7,36 +7,33 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
   z-index: 1000;
-
-
 }
 
 .modal {
   // padding: 20px;
   border-radius: 5px;
-  max-width: 1324px ;
-  position: relative ;
-  background-color: #7155C6;
+  max-width: 1324px;
+  position: relative;
+  background-color: #7155c6;
   color: white;
-  h1{
+  h1 {
     margin-top: 0px;
     text-align: center;
     margin-bottom: 26px;
   }
-  
-  p{
+
+  p {
     padding-top: 12px;
   }
-  ul{
+  ul {
     padding-top: 12px;
   }
 }
 
-
-.modal-text-content{
+.modal-text-content {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -45,13 +42,13 @@
   margin-left: 63px;
   // gap: 12px;
 
-  button{
+  button {
     margin-top: 38px;
     padding: 10px 15px;
-    border: none!important;
+    border: none !important;
 
-    color: #FFFFFF;
-    background-color: #1E0C51!important;
+    color: #ffffff;
+    background-color: #1e0c51 !important;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -59,54 +56,50 @@
     border-radius: 30px;
     width: 300px;
     height: 72px;
-  
   }
 }
 
 .modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none !important;
-    cursor: pointer;
-    z-index: 1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none !important;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .modal-close-button img {
-    width: 20px;
-    height: 20px;
-
+  width: 20px;
+  height: 20px;
 }
 
-.modal-content-wrapper{
+.modal-content-wrapper {
   // display: flex!important;
 
-  display: grid!important;
-  grid-template-columns: repeat(2, 1fr)!important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 
 .modal-content-wrapper img {
-width: 662px;
-height: 778px;
-object-fit: cover; /* Масштабирует изображение, сохраняя пропорции, и обрезает излишки */
+  width: 662px;
+  height: 778px;
+  object-fit: cover; /* Масштабирует изображение, сохраняя пропорции, и обрезает излишки */
 }
 
-
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .modal {
     // padding: 20px;
     border-radius: 5px;
-    max-width: 662px ;
-    position: relative ;
-    background-color: #7155C6;
+    max-width: 662px;
+    position: relative;
+    background-color: #7155c6;
     color: white;
     // padding: auto;
     margin: auto;
-    display: flex!important;
+    display: flex !important;
     line-height: 20px;
-    h1{
+    h1 {
       margin-top: -10px;
       line-height: normal;
       font-size: 64px;
@@ -124,10 +117,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     // }
   }
 
-
-  
-  
-  .modal-text-content{
+  .modal-text-content {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -135,16 +125,16 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     align-items: center;
     margin-right: 63px;
     margin-left: 63px;
-    
+
     // gap: 12px;
-  
-    button{
+
+    button {
       margin: 28px;
       padding: 10px 15px;
-      border: none!important;
-  
-      color: #FFFFFF;
-      background-color: #1E0C51!important;
+      border: none !important;
+
+      color: #ffffff;
+      background-color: #1e0c51 !important;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -152,75 +142,69 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       border-radius: 30px;
       width: 300px;
       height: 72px;
-      h3{
+      h3 {
         font-size: 24px;
       }
     }
   }
-  
+
   .modal-close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: none;
-      border: none !important;
-      cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background: none;
+    border: none !important;
+    cursor: pointer;
   }
-  
+
   .modal-close-button img {
-      width: 20px;
-      height: 20px;
-  
+    width: 20px;
+    height: 20px;
   }
-  
-  .modal-content-wrapper{
-    display: flex!important;
-    
+
+  .modal-content-wrapper {
+    display: flex !important;
+
     flex-direction: column;
-
-
   }
-  
+
   .modal-content-wrapper img {
     display: none;
   }
 }
 
-@media (max-width:320px) {
+@media (max-width: 320px) {
   .modal {
     // padding: 20px;
     border-radius: 5px;
-    max-width: 320px ;
-    position: relative ;
-    background-color: #7155C6;
+    max-width: 320px;
+    position: relative;
+    background-color: #7155c6;
     color: white;
     // padding: auto;
     margin: auto;
-    display: flex!important;
+    display: flex !important;
     line-height: 15px;
-    h1{
+    h1 {
       margin-top: -10px;
       line-height: normal;
       font-size: 16px;
       text-align: center;
     }
 
-    p{
+    p {
       padding-top: 7px;
     }
-    p:first-of-type{
+    p:first-of-type {
       padding-top: 8px;
     }
-    ul{
+    ul {
       font-size: 10px;
       padding-top: 2px;
     }
   }
 
-
-  
-  
-  .modal-text-content{
+  .modal-text-content {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
@@ -228,16 +212,16 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     align-items: center;
     margin-right: 10px;
     margin-left: 10px;
-    
+
     // gap: 12px;
-  
-    button{
+
+    button {
       margin: 15px;
       padding: 10px 15px;
-      border: none!important;
-  
-      color: #FFFFFF;
-      background-color: #1E0C51!important;
+      border: none !important;
+
+      color: #ffffff;
+      background-color: #1e0c51 !important;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -245,43 +229,35 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       border-radius: 30px;
       width: 189px;
       height: 27px;
-      h3{
+      h3 {
         font-size: 16px;
       }
     }
   }
-  
+
   .modal-close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: none;
-      border: none !important;
-      cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none !important;
+    cursor: pointer;
   }
-  
+
   .modal-close-button img {
-      width: 20px;
-      height: 20px;
-  
+    width: 20px;
+    height: 20px;
   }
-  
-  .modal-content-wrapper{
-    display: flex!important;
-    
+
+  .modal-content-wrapper {
+    display: flex !important;
+
     flex-direction: column;
-
-
   }
   .modal-content-wrapper img {
     display: none;
   }
 }
-
-
-
-
-
 
 /* src/ReviewModal.scss */
 
@@ -290,32 +266,34 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 // $white-color: #FFFFFF;
 // $font-family: "Arsenal", sans-serif;
 
-.review {  // Changed .review-modal to .review
+.review {
+  // Changed .review-modal to .review
   margin-top: 0 !important;
-  color:  #1E0C51;
+  color: #1e0c51;
   display: flex;
   width: 1324px;
   height: 870px;
 
   h1,
   h2,
-  h3
-  {
-    color: #1E0C51;
+  h3 {
+    color: #1e0c51;
   }
 
-  &__modal-container {  // Changed .review-modal-container to .review__modal-container
+  &__modal-container {
+    // Changed .review-modal-container to .review__modal-container
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  &__file-upload { // Changed .review-file-upload to .review__file-upload
+  &__file-upload {
+    // Changed .review-file-upload to .review__file-upload
     padding-top: 384px;
     width: 662px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #AD6BDF;
+    background-color: #ad6bdf;
     justify-content: space-between;
     text-align: center;
     cursor: pointer;
@@ -324,17 +302,17 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       display: none;
     }
 
-    img{
+    img {
       margin-top: 20px;
     }
-    p{
+    p {
       margin-top: 10px;
       margin-bottom: 20px;
     }
-    
   }
 
-  &__form-inputs { // Changed .review-form-inputs to .review__form-inputs
+  &__form-inputs {
+    // Changed .review-form-inputs to .review__form-inputs
     padding-left: 48px;
     padding-top: 30px;
     display: flex;
@@ -342,7 +320,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     justify-content: left;
 
     input::placeholder {
-      color: #1E0C51;
+      color: #1e0c51;
       font-family: "Arsenal", sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -353,7 +331,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
     input {
       display: flex;
-      border: 1px solid #1E0C51;
+      border: 1px solid #1e0c51;
       background-color: transparent;
       border-radius: 46px;
       width: 240px;
@@ -368,15 +346,15 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
     .custom-textarea {
       padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 20px;
+      padding-left: 40px;
+      padding-right: 20px;
     }
 
     textarea {
       display: flex;
       // padding: 8px;
       margin-bottom: 10px;
-      background-color: #AD6BDF;
+      background-color: #ad6bdf;
       border-radius: 46px;
       width: 520px;
       height: 275px;
@@ -384,7 +362,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     }
 
     textarea::placeholder {
-      color: #1E0C51;
+      color: #1e0c51;
       font-family: "Arsenal", sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -392,7 +370,8 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     }
   }
 
-  &__name-email { // Changed .review-name-email to .review__name-email
+  &__name-email {
+    // Changed .review-name-email to .review__name-email
     display: flex;
     gap: 30px;
     // margin-bottom: 10px;
@@ -410,11 +389,13 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     }
   }
 
-  &__phone {  // Changed .review-phone to .review__phone
+  &__phone {
+    // Changed .review-phone to .review__phone
     // margin-bottom: 10px;
   }
 
-  &__text-area { // Changed .review-text-area to .review__text-area
+  &__text-area {
+    // Changed .review-text-area to .review__text-area
     margin-bottom: 10px;
     // margin-top: 20px;
   }
@@ -423,7 +404,8 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     display: flex;
   }
 
-  &__checkbox { // Changed .review-checkbox to .review__checkbox
+  &__checkbox {
+    // Changed .review-checkbox to .review__checkbox
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -433,7 +415,7 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       padding-top: 3px;
       text-align: auto;
       margin-left: 5px;
-      color: #FFFFFF;
+      color: #ffffff;
       font-family: "Arsenal", sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -446,12 +428,13 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     }
   }
 
-  &__submit-button { // Changed .review-submit-button to .review__submit-button
-    padding: 28px 50px ;
-    border: none!important;
+  &__submit-button {
+    // Changed .review-submit-button to .review__submit-button
+    padding: 28px 50px;
+    border: none !important;
 
-    color: #FFFFFF;
-    background-color: #1E0C51!important;
+    color: #ffffff;
+    background-color: #1e0c51 !important;
     cursor: pointer;
     display: flex;
     text-align: center;
@@ -467,10 +450,10 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     color: white;
     margin-top: 30px;
     margin-bottom: 76px;
-
   }
 
-  &__form-label { // Changed .review-form-label to .review__form-label
+  &__form-label {
+    // Changed .review-form-label to .review__form-label
     text-align: left;
     font-weight: bold;
     margin-top: 20px;
@@ -482,31 +465,20 @@ object-fit: cover; /* Масштабирует изображение, сохр�
   }
 }
 
+@media (max-width: 768px) {
 
-@media (max-width:768px) {
-
-  .modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    background: none;
-    border: none !important;
-    cursor: pointer;
-}
-
-
-  .review {  // Changed .review-modal to .review
+  .review {
+    // Changed .review-modal to .review
     margin-top: 0 !important;
-    color:  #1E0C51;
+    color: #1e0c51;
     display: flex;
     width: 662px;
     height: 820px;
     justify-content: center;
 
-    h3{
+    h3 {
       font-size: 24px;
     }
-  
 
     .custom-input {
       padding-left: 20px;
@@ -515,12 +487,12 @@ object-fit: cover; /* Масштабирует изображение, сохр�
 
     .custom-textarea {
       padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 0px;
+      padding-left: 20px;
+      padding-right: 0px;
     }
-    
-  
-    &__modal-container {  // Changed .review-modal-container to .review__modal-container
+
+    &__modal-container {
+      // Changed .review-modal-container to .review__modal-container
       // display: grid;
       // grid-template-columns: repeat(2, 1fr);
       display: flex;
@@ -528,8 +500,9 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       width: 662px;
       height: auto;
     }
-  
-    &__file-upload { // Changed .review-file-upload to .review__file-upload
+
+    &__file-upload {
+      // Changed .review-file-upload to .review__file-upload
       // padding-top: 0px;
       // width: 662px;
       // display: flex;
@@ -541,78 +514,78 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       // cursor: pointer;
       display: none;
 
-      img{
+      img {
         margin-top: 10px;
       }
-      
     }
 
-
-  
-    &__form-inputs { // Changed .review-form-inputs to .review__form-inputs
+    &__form-inputs {
+      // Changed .review-form-inputs to .review__form-inputs
       padding-left: 20px;
       padding-top: 20px;
       display: flex;
       flex-direction: column;
       justify-content: left;
-      
-  
+
       input::placeholder {
-        color: #1E0C51;
+        color: #1e0c51;
         font-family: "Arsenal", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
         padding-left: 0px;
       }
-  
+
       input {
         display: flex;
-        border: 1px solid #1E0C51;
+        border: 1px solid #1e0c51;
         background-color: transparent;
         border-radius: 46px;
         width: auto;
         height: 66px;
         font-size: 16px;
       }
-  
+
       textarea {
         display: flex;
         padding: 8px;
         margin-bottom: 10px;
-        background-color: #AD6BDF;
+        background-color: #ad6bdf;
         border-radius: 46px;
         width: 566px;
         height: 275px;
       }
     }
-  
-    &__name-email { // Changed .review-name-email to .review__name-email
+
+    &__name-email {
+      // Changed .review-name-email to .review__name-email
       display: flex;
       margin-bottom: 10px;
-  
+
       div {
         flex: 1;
         margin-right: 10px;
-  
+
         &:last-child {
           margin-right: 0;
         }
-  
+
         input {
           width: 272px;
           width: auto;
         }
       }
     }
-  
-    &__phone {  // Changed .review-phone to .review__phone
+
+    &__phone {
+      // Changed .review-phone to .review__phone
       margin-bottom: 10px;
     }
-  
-    &__text-area { // Changed .review-text-area to .review__text-area
+
+    &__text-area {
+      // Changed .review-text-area to .review__text-area
       margin-bottom: 10px;
-      textarea{
+      textarea {
         padding-left: 20px;
         padding-top: 20px;
         font-size: 16px;
@@ -629,43 +602,45 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       // }
 
       textarea::placeholder {
-        color: #1E0C51;
+        color: #1e0c51;
         font-family: "Arsenal", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 16px;
       }
     }
-  
+
     nobr {
       display: flex;
     }
-  
-    &__checkbox { // Changed .review-checkbox to .review__checkbox
+
+    &__checkbox {
+      // Changed .review-checkbox to .review__checkbox
       display: flex;
       align-items: center;
       margin-bottom: 10px;
       font-size: 16px;
-  
+
       label {
         padding-top: 3px;
         text-align: auto;
         margin-left: 5px;
         font-size: 16px;
-        color: #FFFFFF;
+        color: #ffffff;
       }
-  
+
       input {
         width: 20px;
         height: 20px;
       }
     }
-  
-    &__submit-button { // Changed .review-submit-button to .review__submit-button
+
+    &__submit-button {
+      // Changed .review-submit-button to .review__submit-button
       padding: 10px 15px;
       border: none;
-      color: #FFFFFF;
-      background-color: #1E0C51!important;
+      color: #ffffff;
+      background-color: #1e0c51 !important;
       cursor: pointer;
       // width: 100%;
       margin-bottom: 20px;
@@ -678,46 +653,38 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       font-size: 16px;
       color: white;
     }
-  
-    &__form-label { // Changed .review-form-label to .review__form-label
+
+    &__form-label {
+      // Changed .review-form-label to .review__form-label
       text-align: left;
       font-weight: bold;
       margin-top: 20px;
       margin-bottom: 17px;
     }
   }
-  
 }
 
-@media (max-width:320px) {
-
+@media (max-width: 320px) {
   .modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    background: none;
-    border: none !important;
-    cursor: pointer;
 
-    img{
+    img {
       width: 15px;
       height: 15px;
     }
-}
+  }
 
-
-  .review {  // Changed .review-modal to .review
+  .review {
+    // Changed .review-modal to .review
     margin-top: 0 !important;
-    color:  #1E0C51;
+    color: #1e0c51;
     display: flex;
     width: 320px;
     height: auto;
     justify-content: center;
 
-    h3{
+    h3 {
       font-size: 10px;
     }
-  
 
     .custom-input {
       padding-left: 10px;
@@ -728,18 +695,17 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       padding-top: 15px;
       padding-left: 20px;
     }
-    
-  
-    &__modal-container {  // Changed .review-modal-container to .review__modal-container
+
+    &__modal-container {
+      // Changed .review-modal-container to .review__modal-container
       // display: grid;
       // grid-template-columns: repeat(2, 1fr);
       display: flex;
       flex-direction: column;
       width: 320px;
       height: auto;
-      
     }
-  
+
     // &__file-upload { // Changed .review-file-upload to .review__file-upload
     //   padding-top: 0px;
     //   width: auto;
@@ -757,73 +723,76 @@ object-fit: cover; /* Масштабирует изображение, сохр�
     //     width: 20px;
     //     height: 20px;
     //   }
-      
+
     // }
-  
-    &__form-inputs { // Changed .review-form-inputs to .review__form-inputs
+
+    &__form-inputs {
+      // Changed .review-form-inputs to .review__form-inputs
       padding-top: 10px;
       padding-left: 20px;
       display: flex;
       flex-direction: column;
       justify-content: left;
-      
-  
+
       input::placeholder {
-        color: #1E0C51;
+        color: #1e0c51;
         font-family: "Arsenal", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 10px;
         padding-left: 0px;
       }
-  
+
       input {
         display: flex;
-        border: 1px solid #1E0C51;
+        border: 1px solid #1e0c51;
         background-color: transparent;
         border-radius: 46px;
         width: auto;
         height: 35px;
         font-size: 10px;
       }
-  
+
       textarea {
         display: flex;
         padding: 8px;
         margin-bottom: 10px;
-        background-color: #AD6BDF;
+        background-color: #ad6bdf;
         border-radius: 20px;
         width: 273px;
         height: 146px;
       }
     }
-  
-    &__name-email { // Changed .review-name-email to .review__name-email
+
+    &__name-email {
+      // Changed .review-name-email to .review__name-email
       display: flex;
       margin-bottom: 10px;
       gap: 10px;
-  
+
       div {
         margin-right: 20px;
-  
+
         &:last-child {
           margin-right: 20px;
         }
-  
+
         input {
           width: 272px;
           width: auto;
         }
       }
     }
-  
-    &__phone {  // Changed .review-phone to .review__phone
+
+    &__phone {
+      // Changed .review-phone to .review__phone
       margin-bottom: 10px;
     }
-  
-    &__text-area { // Changed .review-text-area to .review__text-area
+
+    &__text-area {
+      // Changed .review-text-area to .review__text-area
       margin-bottom: 0px;
-      textarea{
+      textarea {
         padding-left: 20px;
         padding-top: 20px;
         font-size: 10px;
@@ -841,43 +810,45 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       // }
 
       textarea::placeholder {
-        color: #1E0C51;
+        color: #1e0c51;
         font-family: "Arsenal", sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 10px;
       }
     }
-  
+
     nobr {
       display: flex;
     }
-  
-    &__checkbox { // Changed .review-checkbox to .review__checkbox
+
+    &__checkbox {
+      // Changed .review-checkbox to .review__checkbox
       display: flex;
       align-items: center;
       margin-bottom: 10px;
       font-size: 10px;
-  
+
       label {
         padding-top: 0px;
         text-align: auto;
         margin-left: 5px;
         font-size: 10px;
-        color: #FFFFFF;
+        color: #ffffff;
       }
-  
+
       input {
         width: 10px;
         height: 10px;
       }
     }
-  
-    &__submit-button { // Changed .review-submit-button to .review__submit-button
+
+    &__submit-button {
+      // Changed .review-submit-button to .review__submit-button
       padding: 0px 5px;
       border: none;
-      color: #FFFFFF;
-      background-color: #1E0C51!important;
+      color: #ffffff;
+      background-color: #1e0c51 !important;
       cursor: pointer;
       margin-top: 5px;
       // margin-bottom: 20px;
@@ -888,13 +859,13 @@ object-fit: cover; /* Масштабирует изображение, сохр�
       margin-top: 0px;
       margin-bottom: 10px;
     }
-  
-    &__form-label { // Changed .review-form-label to .review__form-label
+
+    &__form-label {
+      // Changed .review-form-label to .review__form-label
       text-align: left;
       font-weight: bold;
       margin-bottom: 5px;
       margin-top: 5px;
     }
   }
-  
 }

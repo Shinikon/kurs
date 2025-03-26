@@ -3,12 +3,12 @@ import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 
 import Modal from "../components/Modal";
-// import "../scss/components/_modal.scss";
-
 const EmblaCarousel = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel({ ...options, loop: true }, [
     AutoScroll({
+      speed: 1.5,
+      scrollAmount: 3,
       playOnInit: true,
       stopOnInteraction: false,
     }),
@@ -16,15 +16,6 @@ const EmblaCarousel = (props) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-  // const toggleAutoplay = useCallback(() => {
-  //   const autoScroll = emblaApi?.plugins()?.autoScroll;
-  //   if (!autoScroll) return;
-
-  //   const playOrStop = autoScroll.isPlaying()
-  //     ? autoScroll.stop
-  //     : autoScroll.play;
-  //   playOrStop();
-  // }, [emblaApi]);
 
   useEffect(() => {
     const autoScroll = emblaApi?.plugins()?.autoScroll;
@@ -86,8 +77,6 @@ const EmblaCarousel = (props) => {
           ))}
         </div>
       </div>
-
-      <div className="embla__controls">{/* Кнопки управления */}</div>
 
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
         {selectedImage && (

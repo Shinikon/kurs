@@ -101,14 +101,18 @@ function Main() {
                   к нам за качественным 3D-моделированием.
                 </p>
               </div>
-              <button className="main__block_btn">Связаться с нами</button>
             </div>
+            <button className="main__block_btn">
+              Связаться с нами
+            </button>
           </div>
           <div className="main__block_spec">
             <p className="main__block_spec_title">Наши специалисты</p>
             <Specialists />
             <Link to="./Portfolio">
-              <button className="main__block_btn">Посмотреть портфолио</button>
+              <button className="main__block_spec_btn">
+                Посмотреть портфолио
+              </button>
             </Link>
           </div>
         </div>

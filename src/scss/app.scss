@@ -271,6 +271,10 @@ hr {
         width: 100%;
         text-align: center;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // justify-content: center;
       }
 
       &_spec {
@@ -313,9 +317,13 @@ hr {
       }
     }
     &__reviews {
-      /* Замените "имя_родительского_блока" на фактическое имя родительского блока */
-      display: block; /* Убираем flex */
+      //   display: block;
       margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
       &_top {
         &_block {
           // margin-left: 30px;
@@ -348,6 +356,8 @@ hr {
         }
         hr {
           // align-self: center;
+          margin: 0;
+          margin-top: 36px;
           margin-left: 116px;
           width: 452px;
           // display: none;
@@ -355,19 +365,18 @@ hr {
       }
 
       &_bottom {
-        margin-top: 20px;
+        margin-top: 0px;
         margin-left: 0px;
         line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         .section {
-          margin-top: 40px;
-          // display: block;
           display: flex;
           gap: 35px;
-          // align-items: flex-start;
           img {
             width: 103px;
             height: 102px;
-            // display: none;
           }
           h3 {
             font-size: 20px;
@@ -378,6 +387,9 @@ hr {
             display: none;
           }
         }
+        // .section:not(:first-of-type) {
+        //   margin-top: 40px;
+        // }
       }
     }
   }
@@ -439,6 +451,10 @@ hr {
         text-align: center;
         height: auto;
         line-height: 17px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       &_spec {
@@ -520,29 +536,22 @@ hr {
               }
             }
           }
-
-          // :not(:last-child){
-          //     display: none;
-          // }
-
-          // :nth-of-type(even){
-          //     background-color: #AD6BDF;
-          // }
         }
         hr {
-          // align-self: center;
+          margin-top: 25px;
           margin-left: -10px;
           width: 320px;
-          // display: none;
         }
       }
 
       &_bottom {
-        margin-top: 20px;
+        margin-top: 25px;
         margin-left: 0px;
         line-height: 13px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
         .section {
-          margin-top: 25px;
           width: 300px;
           // display: block;
           display: flex;
@@ -574,6 +583,8 @@ hr {
   flex-direction: column;
   padding: 10px;
   color: white;
+  font-variant: small-caps;
+  line-height: auto;
 
   &_card {
     margin-top: 13px;
@@ -1088,9 +1099,6 @@ hr {
           h3 {
             font-size: 24px;
           }
-          p:first-of-type {
-            font-weight: bold;
-          }
         }
       }
     }
@@ -1126,12 +1134,9 @@ hr {
         &_desc {
           display: flex;
           flex-direction: column;
-          gap: 6px;
+          gap: 3px;
           h3 {
             font-size: 10px;
-          }
-          p:first-of-type {
-            font-weight: bold;
           }
         }
       }

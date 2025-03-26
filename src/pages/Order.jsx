@@ -13,10 +13,7 @@ function Order() {
         <div className="order__block">
           {/* <div> */}
           <h3>О задаче:</h3>
-          {/* </div> */}
-          {/* <div className="order__block_form"> */}
-          {/* Используем компонент OrderForm */}
-          {/* </div> */}
+
         </div>
         <OrderForm />
         <div className="order__img">
