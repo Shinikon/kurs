@@ -76,7 +76,7 @@ hr {
 
 .main {
   margin-top: 50px;
-  margin-left: 60px;
+  padding-left: 60px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -253,14 +253,14 @@ hr {
     padding: 0;
   }
 
-  .App {
+  // .App {
+  //   padding-left: 30px;
+  //   padding-right: 30px;
+  // }
+  .main {
+    // margin: 30px;
     padding-left: 30px;
     padding-right: 30px;
-  }
-  .main {
-    margin: 30px;
-    margin-left: 0px;
-    margin-right: 0px;
 
     &__block {
       text-align: left;
@@ -427,14 +427,15 @@ hr {
     padding: 0;
   }
 
-  .App {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+  // .App {
+  //   padding-left: 5px;
+  //   padding-right: 5px;
+  // }
   .main {
     // margin-left: 0px;
-    margin-top: 25px;
-    margin-right: 0px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     h1 {
       font-size: 20px;
@@ -718,7 +719,7 @@ hr {
 .order {
   // width: 1440px;
   margin-top: 50px;
-  margin-left: 60px;
+  padding-left: 60px;
   color: #fff;
   padding-bottom: 65px;
   position: relative;
@@ -830,8 +831,8 @@ hr {
 @media (max-width: 768px) {
   .order {
     width: 768px;
-    margin-top: 50px;
-    margin-left: 0px;
+    margin-top: 30px;
+    padding-left: 30px;
     color: #fff;
     padding-bottom: 0px;
     position: relative;
@@ -925,8 +926,8 @@ hr {
 @media (max-width: 320px) {
   .order {
     width: 320px;
-    margin-top: 50px;
-    margin-left: 0px;
+    margin-top: 30px;
+    padding-left: 0px;
     color: #fff;
     padding-bottom: 0px;
     position: relative;
@@ -934,96 +935,15 @@ hr {
 
     &__title {
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 20px;
     }
     &__block {
-      margin-top: 21px;
+      margin-top: 12px;
       display: flex;
       flex-direction: column;
 
       h3 {
         font-size: 10px;
-      }
-
-      // &_form{
-      //     // margin-left: 0px;
-      //     margin-top: 0px;
-      //     display: flex;
-      //     padding-left: 0px;
-      //     margin-left: 0;
-      //     margin-right: 0;
-
-      //     label{
-      //         display: flex;
-      //         flex-direction: column;
-      //         z-index: 1;
-
-      //         ::placeholder{
-
-      //             font-size: 10px;
-
-      //         }
-
-      //         .custom-input {
-      //             padding: 0;
-      //             padding-top: 14px;
-      //             padding-bottom: 14px;
-      //             padding-left: 0;
-      //             // padding-right: 40px;
-      //             border-bottom: solid 1px #fff;
-      //             width: 280px;
-      //           }
-
-      //           .custom-textarea {
-      //             padding: 14px;
-      //             padding-left: 0;
-      //             padding-bottom: 0px;
-      //         //   padding-right: 20px;
-      //             border-bottom: solid 1px #fff;
-      //           }
-
-      //           textarea{
-      //             background-color: transparent;
-      //             border:none;
-      //             color: white;
-      //             width: 280px;
-      //             box-sizing: border-box;
-      //             resize: vertical;
-
-      //             &:focus {
-      //                 outline: none;}
-      //           }
-
-      //         input{
-      //             width: 280px;
-      //             background-color: transparent;
-      //             border: none;
-      //             color: #fff;
-      //             // border-bottom: solid 1px #fff;
-      //             font-size: 10px;
-
-      //             &:focus {
-      //                 outline: none;
-      //                 color: #fff;
-      //               }
-      //               :last-of-type{
-      //                 overflow:scroll;
-      //               }
-      //         }
-      //         p{
-      //             margin-bottom: 0px;
-      //         }
-      //     }
-      // }
-    }
-
-    &__box {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 19px;
-      h3 {
-        font-size: 20px;
       }
     }
     &__img {

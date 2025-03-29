@@ -8,7 +8,7 @@ const OrderForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [about, setAbout] = useState("");
-  const [activeIndex, setActiveIndex] = useState(null); 
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const buttons = [
     { label: "Архитектурная визуализация", index: 0 },
@@ -30,7 +30,7 @@ const OrderForm = () => {
     setPhone("");
     setEmail("");
     setAbout("");
-    setActiveIndex(null); 
+    setActiveIndex(null);
 
     alert("Форма успешно отправлена!");
   };
