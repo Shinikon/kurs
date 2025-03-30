@@ -58,8 +58,8 @@ h2{
 
 @media (max-width: 768px) {
 .header {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
 
   .container {
     display: flex;
@@ -107,54 +107,96 @@ h2{
 }
 
 
+/* Mobile Styles (320px and Below) */
 @media (max-width: 320px) {
   .header {
     margin-top: 0px;
-    // margin-left: 5px;
-    // margin-right: 10px;
-  
+    margin-left: 10px;
+    margin-right: 10px;
+
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-  
-    &__logo,a  {
-      display: flex;
-      h2{
-        width: 167px;
-      }
-  
-  
+
+    &__logo {
       img {
         width: 29px;
         height: 37px;
         margin-right: 10px;
       }
-  
-      h2{
-        // margin-left: 5px;
-        margin-top: 5px;
-        color: white;
-        font-family: "Montserrat" sans-serif;
+
+      h2 {
+        font-size: 1em; /* Adjust font size for mobile */
+        width: auto; /* Allow text to wrap if needed */
       }
     }
+
     &__nav {
-      display: none;
-      // list-style: none;
-      // margin: 0;
-      // padding: 0;
-      // margin-left: 80px;
-  
-  
-      //   li, a{
-      //       color: white;
-      //       margin-right: 15px; 
-      //       // font-family: "Shanti" sans-serif;
-      //       font-size: 24px;
-      //       text-decoration: none;
-      //   }
+      position: absolute;
+      display: flex;
+      align-items: flex-end;
+      margin-left: 0;
+      flex-direction: column;
+      top: 10px; /* Position below the header */
+      left: 190px;
+      width: 120px;
+      background-color: rgba(113, 85, 198); /* Dark background */
+      text-align: center;
+      padding-top: 40px;
+      padding-bottom: 0px;
+      z-index: 10;
+      transition: all 0.3s ease; // Added transition for smooth animation
+
+      li {
+        display: block;
+        border-bottom: 1px solid white;
+        width: 120px;
+        text-align: right;
+
+        h3 {
+          margin-right: 20px;
+          padding-bottom: 10px;
+          width: 120px;
+        }
       }
     }
-  
+
+    &__burger {
+      display: block; /* Показываем иконку бургера */
+      cursor: pointer;
+      padding: 10px;
+      z-index: 100;
+      transition: transform 0.3s ease; // Added transition for rotation
+
+      &.open { /* Added class for the open state */
+        transform: rotate(45deg);
+        
+
+        div {
+          background-color: white;
+          &:nth-child(1) {
+            transform: translateY(6px) rotate(90deg);
+          }
+
+          &:nth-child(2) {
+            transform: translateY() rotate(180deg);
+          }
+
+          &:nth-child(3) {
+            transform: translateY(-6px) rotate(90deg);
+          }
+        }
+      }
+
+      div {
+        width: 20px; /* Smaller burger icon */
+        height: 2px;  /* Thinner lines */
+        background-color: #7155C6;
+        margin: 4px 0; /* Adjust spacing */
+        transition: all 0.3s ease; // Added transition for individual lines
+      }
+    }
+  }
 }
