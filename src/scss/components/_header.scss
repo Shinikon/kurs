@@ -107,7 +107,6 @@ h2{
 }
 
 
-/* Mobile Styles (320px and Below) */
 @media (max-width: 320px) {
   .header {
     margin-top: 0px;
@@ -121,6 +120,9 @@ h2{
     }
 
     &__logo {
+      display: flex; 
+      align-items: center;
+
       img {
         width: 29px;
         height: 37px;
@@ -128,35 +130,40 @@ h2{
       }
 
       h2 {
-        font-size: 1em; /* Adjust font size for mobile */
-        width: auto; /* Allow text to wrap if needed */
+        font-size: 1em;
+        width: auto;
       }
     }
 
     &__nav {
+      gap: 0;
       position: absolute;
       display: flex;
       align-items: flex-end;
       margin-left: 0;
       flex-direction: column;
-      top: 10px; /* Position below the header */
+      top: 10px; 
       left: 190px;
       width: 120px;
-      background-color: rgba(113, 85, 198); /* Dark background */
+      background-color: rgba(113, 85, 198, 0.9); 
       text-align: center;
       padding-top: 40px;
       padding-bottom: 0px;
       z-index: 10;
-      transition: all 0.3s ease; // Added transition for smooth animation
+      transition: all 0.3s ease;
 
       li {
         display: block;
         border-bottom: 1px solid white;
         width: 120px;
-        text-align: right;
+        text-align: center;
+
+        &:last-child{
+          border-bottom: none;
+        }
 
         h3 {
-          margin-right: 20px;
+          padding-top: 10px;
           padding-bottom: 10px;
           width: 120px;
         }
@@ -164,39 +171,75 @@ h2{
     }
 
     &__burger {
-      display: block; /* Показываем иконку бургера */
+      display: block;
       cursor: pointer;
       padding: 10px;
       z-index: 100;
-      transition: transform 0.3s ease; // Added transition for rotation
+      top: 5px;
+      transition: transform 0.3s ease; 
+      position: relative;
+      width: fit-content;
 
-      &.open { /* Added class for the open state */
-        transform: rotate(45deg);
-        
+      &.open {
+
+        span {
+          display: block; 
+          position: absolute; 
+          left: -50px;  
+          top: 15px;   
+          transform: translateY(-50%);  
+          color: white;      
+
+          
+        }
 
         div {
           background-color: white;
+          transform: translateY(-6px) rotate(-45deg);
           &:nth-child(1) {
-            transform: translateY(6px) rotate(90deg);
+            transform: translateY(-6px) rotate(-45deg);
           }
 
           &:nth-child(2) {
-            transform: translateY() rotate(180deg);
+            transform: translateY(0px) rotate(45deg);
           }
 
           &:nth-child(3) {
-            transform: translateY(-6px) rotate(90deg);
+            display: none;
+            transform: translateY(-6px) rotate(-45deg); 
           }
         }
       }
 
       div {
-        width: 20px; /* Smaller burger icon */
-        height: 2px;  /* Thinner lines */
+        width: 20px; 
+        height: 2px; 
         background-color: #7155C6;
-        margin: 4px 0; /* Adjust spacing */
-        transition: all 0.3s ease; // Added transition for individual lines
+        margin: 4px 0;
+        transition: all 0.3s ease; 
       }
+    }
+    span {
+      display: none; 
+    }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 9; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      visibility: visible;
     }
   }
 }
+

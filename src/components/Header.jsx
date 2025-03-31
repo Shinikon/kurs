@@ -12,6 +12,11 @@ function Header() {
 
   return (
     <div className="header">
+      <div
+        className={`overlay ${menuOpen ? "active" : ""}`}
+        onClick={toggleMenu}
+      />
+
       <div className="container">
         <Link to="/">
           <div className="header__logo">
@@ -22,17 +27,21 @@ function Header() {
           </div>
         </Link>
 
-        {/* Burger Icon */}
         <div
-          className={`header__burger ${menuOpen ? "open" : ""}`} // Добавлен класс open
+          className={`header__burger ${menuOpen ? "open" : ""}`}
           onClick={toggleMenu}
         >
+          {menuOpen && (
+            <span>
+              <h3>Меню</h3>
+            </span>
+          )}
           <div></div>
           <div></div>
           <div></div>
         </div>
 
-        {/* Conditional Rendering of Navigation Menu */}
+      
         {menuOpen && (
           <ul className="header__nav">
             <li>
