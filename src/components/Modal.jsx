@@ -1,6 +1,6 @@
 import React from 'react';
-import '../scss/components/_modal.scss';  // Или путь к вашим стилям
-import closeIcon from '../assets/img/close.svg';  // Или путь к вашей картинке
+import '../scss/components/_modal.scss';  
+import closeIcon from '../assets/img/close.svg';  
 
 const Modal = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;

@@ -65,7 +65,7 @@ function Header() {
         </div>
 
         {menuOpen && (
-          <ul className="header__nav-burger">
+          <ul className="header__nv-burger">
             <li>
               <Link to="/">
                 <h3>Главная</h3>

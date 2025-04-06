@@ -2,83 +2,73 @@
   max-width: 1440px;
   --slide-height: auto;
   --slide-spacing: 44px;
-  --slide-size: auto; /* Или любое другое нужное вам значение */
+  --slide-size: auto; 
   margin-left: auto;
   margin-right: auto;
-}
-
-.embla__viewport {
-  overflow: hidden;
-}
-
-.embla__container {
-  display: flex;
-  margin-left: calc(var(--slide-spacing) * -1);
-}
-
-.embla__slide {
-  //   transform: translate3d(0, 0, 0);
-  flex: 0 0 var(--slide-size); /* Исправлено: flex-grow = 0 */
-  min-width: 411px;
-  padding-left: var(--slide-spacing);
-  box-sizing: border-box; /* Важно! Учитываем padding */
-  img {
-    width: 411px;
+  &__viewport {
+    overflow: hidden;
+  }
+  &__container {
+    display: flex;
+    margin-left: calc(var(--slide-spacing) * -1);
+  }
+  &__slide {
+    flex: 0 0 var(--slide-size); 
+    min-width: 411px;
+    padding-left: var(--slide-spacing);
+    box-sizing: border-box; 
+    img {
+      width: 411px;
+    }
   }
 }
-
 .modal-image-container {
-  display: flex; /* Центрируем содержимое */
-  justify-content: center; /* по горизонтали */
-  align-items: center; /* по вертикали */
-  transform: scale(1.1); /* Увеличиваем изображение на 10% */
-  transition: transform 0.3s ease-in-out; /* Плавная анимация */
-  max-width: 1000px; /*  Ограничиваем размер контейнера */
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; 
+  max-width: 1000px; 
   max-height: 100%;
-}
-
-.modal-image-container img {
-  width: 1000px; /* Изображение не должно быть больше контейнера */
-  max-height: 100%; /*  И  по высоте */
-  object-fit: contain; /*  Вписываем изображение в контейнер */
+  img {
+    width: 1000px; 
+    max-height: 100%; 
+    object-fit: contain;
+  }
 }
 
 @media (max-width: 768px) {
   .embla {
     --slide-spacing: 20px;
-  }
-
-  .embla__viewport {
-    overflow: hidden;
-  }
-
-  .embla__slide {
-    min-width: 212px;
-    img {
-      width: 212px;
+    &__viewport {
+      overflow: hidden;
+    }
+    &__slide {
+      min-width: 212px;
+      img {
+        width: 212px;
+      }
     }
   }
   .modal-image-container img {
-    width: 662px; /* Изображение не должно быть больше контейнера */
+    width: 662px;
   }
 }
 
 @media (max-width: 320px) {
   .embla {
     --slide-spacing: 10px;
-  }
-
-  .embla__viewport {
-    overflow: hidden;
-  }
-
-  .embla__slide {
-    min-width: 92px;
-    img {
-      width: 92px;
+    &__viewport {
+      overflow: hidden;
+    }
+    &__slide {
+      min-width: 92px;
+      img {
+        width: 92px;
+      }
     }
   }
   .modal-image-container img {
-    width: 320px; /* Изображение не должно быть больше контейнера */
+    width: 320px; 
   }
 }

@@ -1,14 +1,16 @@
-import React from 'react';
-import data from '../OurSpec';
+import React from "react";
+import data from "../OurSpec";
 import "../scss/app.scss";
 
 const prepareData = (data, repeatCount) => {
   const repeatedData = [];
   for (let i = 0; i < repeatCount; i++) {
-    repeatedData.push(...data.map((item, index) => ({
-      ...item,
-      isLast: (i === repeatCount - 1) && (index === data.length - 1),
-    })));
+    repeatedData.push(
+      ...data.map((item, index) => ({
+        ...item,
+        isLast: i === repeatCount - 1 && index === data.length - 1,
+      }))
+    );
   }
   return repeatedData;
 };
@@ -22,12 +24,14 @@ const Specialists = () => {
   }
 
   return (
-    <div className="specialists"> {/* Корневой контейнер */}
+    <div className="specialists">
       {preparedData.map((specialist) => (
         <div
           className="specialists_card"
           key={specialist.id}
-          style={{ borderBottom: specialist.isLast ? 'none' : '1px solid white' }}
+          style={{
+            borderBottom: specialist.isLast ? "none" : "1px solid white",
+          }}
         >
           <img
             src={specialist.imageUrl}
@@ -43,5 +47,6 @@ const Specialists = () => {
     </div>
   );
 };
-
 export default Specialists;
+
+
