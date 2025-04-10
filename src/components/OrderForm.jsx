@@ -1,7 +1,5 @@
-// OrderForm.jsx
 import React, { useState } from "react";
-import "../scss/components/_orderForm.scss"; // Импортируйте CSS для стилизации (Или создайте новый для OrderForm)
-// import ButtonGroup from "../components/ButtonGroup"; // Импортируем ButtonGroup, если он необходим
+import "../scss/components/_orderForm.scss"; 
 
 const OrderForm = () => {
   const [name, setName] = useState("");
@@ -25,7 +23,6 @@ const OrderForm = () => {
 
     console.log("Отправка данных:", { name, phone, email, about, activeIndex });
 
-    // Очистка полей
     setName("");
     setPhone("");
     setEmail("");

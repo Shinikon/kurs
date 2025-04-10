@@ -1,20 +1,51 @@
-.banner{
-    margin-top: 60px;
-    margin-left: 60px;
-    margin-right: 56px;
-    color: white;
-    &__container{
+
+@media (max-width: 2560px) {
+    .banner{
         display: flex;
-        &_box{
-            margin-left: -95px;
-            &_title{
-                width: 933px;
-                margin-top: 100px;
-                text-transform: uppercase;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        &__container{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            &_box{
+                // margin-left: -95px;
+                &_title{
+                    width: 933px;
+                    margin-top: 100px;
+                    text-transform: uppercase;
+                }
+                &_text{
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                }
             }
-            &_text{
-                margin-top: 25px;
-                margin-bottom: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .banner{
+        margin-top: 60px;
+        margin-left: 60px;
+        margin-right: 56px;
+        color: white;
+        &__container{
+            display: flex;
+            &_box{
+                margin-left: -95px;
+                &_title{
+                    width: 933px;
+                    margin-top: 100px;
+                    text-transform: uppercase;
+                }
+                &_text{
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }

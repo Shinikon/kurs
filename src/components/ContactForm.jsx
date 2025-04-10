@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../scss/components/_contactForm.scss'; // Импортируйте CSS для стилизации
+import '../scss/components/_contactForm.scss'; 
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -16,7 +16,6 @@ const ContactForm = () => {
       return;
     }
 
-    // Здесь можно добавить код для отправки данных формы на сервер
     console.log('Отправка формы:', {
       name,
       email,
@@ -25,7 +24,6 @@ const ContactForm = () => {
       agreement,
     });
 
-    // Очистка формы
     setName('');
     setEmail('');
     setPhone('');

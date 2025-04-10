@@ -1,15 +1,16 @@
-import React from 'react';
-import './scss/app.scss';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import Footer from './components/Footer'
+import React from "react";
+import "./scss/app.scss";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
-import Main from './pages/Main';
-import Order from './pages/Order';
-import Portfolio from './pages/Portfolio';
-import Contacts from './pages/Contacts';
+import Main from "./pages/Main";
+import Order from "./pages/Order";
+import Portfolio from "./pages/Portfolio";
+import Contacts from "./pages/Contacts";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <div className="App">
         <Header />
         <Banner />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/order" element={<Order />} />
@@ -30,4 +32,3 @@ function App() {
 }
 
 export default App;
-

@@ -27,36 +27,32 @@ const EmblaCarousel = (props) => {
       .on("autoScroll:stop", () => setIsPlaying(false))
       .on("reInit", () => setIsPlaying(autoScroll.isPlaying()));
 
-    // Обработчики событий для взаимодействия пользователя
     const onInteraction = () => {
-      autoScroll.stop(); // Останавливаем при любом взаимодействии
+      autoScroll.stop(); 
       setIsPlaying(false);
     };
 
     const onSettle = () => {
-      // Запускаем снова через небольшой промежуток времени (например, 3 секунды)
       setTimeout(() => {
         if (!isPlaying) {
-          // Проверяем, что не играем уже
           autoScroll.play();
           setIsPlaying(true);
         }
-      }, 500); // 3 секунды (3000 миллисекунд)
+      }, 500); 
     };
 
     emblaApi
       .on("dragStart", onInteraction)
       .on("pointerDown", onInteraction)
-      .on("settle", onSettle); // Когда перетаскивание закончилось
+      .on("settle", onSettle); 
 
     return () => {
-      // Функция очистки
       emblaApi
         .off("dragStart", onInteraction)
         .off("pointerDown", onInteraction)
         .off("settle", onSettle);
     };
-  }, [emblaApi, isPlaying]); // Добавлена isPlaying в зависимости useEffect
+  }, [emblaApi, isPlaying]);
 
   return (
     <div className="embla">

@@ -9,7 +9,7 @@ function ContactsBtns({ initialContent, toggledContent, style }) {
       const handleClick = () => {
       setContentVisible(!contentVisible);
       setIsDarkened(!isDarkened);
-      setIsActive(!isActive); // Toggle isActive only on click
+      setIsActive(!isActive);
     };
   
     return (

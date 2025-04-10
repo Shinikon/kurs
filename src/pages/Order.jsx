@@ -1,9 +1,8 @@
-// Order.jsx (Обновленный)
 import "../scss/app.scss";
 import "../scss/components/_buttonGroup.scss";
 import React from "react";
 import box from "../assets/img/plastic.svg";
-import OrderForm from "../components/OrderForm"; // Импортируем новый компонент
+import OrderForm from "../components/OrderForm";
 
 function Order() {
   return (

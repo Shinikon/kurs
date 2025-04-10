@@ -5,7 +5,6 @@ import ContactForm from "../components/ContactForm";
 
 function Contacts() {
   return (
-    // <div className="wrapper">
     <div className="contacts">
       <div className="contacts__title">
         <h1>Контакты</h1>
@@ -34,7 +33,6 @@ function Contacts() {
       </div>
       <ContactForm />
     </div>
-    // </div>
   );
 }
 
