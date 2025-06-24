@@ -1,0 +1,24 @@
+User-agent: *
+Disallow: /contacts/
+Disallow: /order/
+
+User-agent: Googlebot
+Disallow: /contacts/
+Disallow: /order/
+Allow: /assets/*.css
+Allow: /assets/*.js
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.svg
+
+User-agent: Yandex
+Disallow: /contacts/
+Disallow: /order/
+Allow: /assets/*.css
+Allow: /assets/*.js
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.svg
+
+Sitemap: https://shinikon.github.io/kurs/sitemap.xml 
+Host: https://shinikon.github.io/kurs/ 
